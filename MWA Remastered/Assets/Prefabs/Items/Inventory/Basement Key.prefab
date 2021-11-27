@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 282915643220335949}
   - component: {fileID: 282915643220335950}
   - component: {fileID: 7149901012187564427}
+  - component: {fileID: -2109896018881039514}
   m_Layer: 5
   m_Name: Basement Key
   m_TagString: Untagged
@@ -166,10 +167,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad82b705aa71c045ba9b098882b3195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localize: 1
   invDisplay: {fileID: 0}
   myItem: {fileID: 0}
   myButton: {fileID: 0}
   val: 0
+  usable: 0
+  canUse: 0
+  infotabPrefab: {fileID: 4313461155571057500, guid: 6d65f720faf2ab048b94753a62cfffb8, type: 3}
+  itemName: id_item_basementkey
+  useMSG: 
+  itemStat1: 
+  itemStat2: 
+  itemStat3: 
+  statVal1: 0
+  statVal2: 0
+  statVal3: 0
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
+  imColor: {r: 0.14509805, g: 1, b: 0, a: 1}
+--- !u!114 &-2109896018881039514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282915643220335936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 282915643220335950}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7149901012187564427}
+        m_TargetAssemblyTypeName: InventoryButtons, Assembly-CSharp
+        m_MethodName: OnPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3647908933664152138
 GameObject:
   m_ObjectHideFlags: 0

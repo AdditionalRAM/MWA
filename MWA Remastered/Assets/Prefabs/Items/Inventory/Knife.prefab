@@ -246,9 +246,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fad82b705aa71c045ba9b098882b3195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localize: 1
   invDisplay: {fileID: 0}
   myItem: {fileID: 0}
+  myButton: {fileID: 0}
   val: 0
+  usable: 1
+  canUse: 0
+  infotabPrefab: {fileID: 4313461155571057500, guid: 6d65f720faf2ab048b94753a62cfffb8, type: 3}
+  itemName: id_item_knife
+  useMSG: id_equip
+  itemStat1: id_damage
+  itemStat2: id_range
+  itemStat3: id_kb
+  statVal1: 1
+  statVal2: 0.7
+  statVal3: 0.7
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
+  imColor: {r: 0.14509805, g: 1, b: 0, a: 1}
 --- !u!114 &8787623607471512490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +290,7 @@ MonoBehaviour:
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.14415002, g: 1, b: 0, a: 1}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 2.27
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
@@ -295,7 +310,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: -4924389742928944403}
         m_TargetAssemblyTypeName: InventoryButtons, Assembly-CSharp
-        m_MethodName: OnInteract
+        m_MethodName: OnPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

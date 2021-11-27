@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a433a3558a4ff4bb877dff9269b641, type: 3}
   m_Name: PlayerConsumableInventory
   m_EditorClassIdentifier: 
+  savePath: /savedata/
+  fileName: consinv.sugoma
   container: []
   limit: 1

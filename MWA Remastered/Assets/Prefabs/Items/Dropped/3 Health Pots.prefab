@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 81a6a5e8dd7c9dc409052b7a22910b33, type: 2}
     - target: {fileID: 5899883750495619805, guid: 2aa7d7a1a462ed647a23ea2d134f0c36, type: 3}
       propertyPath: itemName
-      value: Health Potion
+      value: id_item_healpot
       objectReference: {fileID: 0}
     - target: {fileID: 5899883750495619805, guid: 2aa7d7a1a462ed647a23ea2d134f0c36, type: 3}
       propertyPath: itemAmount

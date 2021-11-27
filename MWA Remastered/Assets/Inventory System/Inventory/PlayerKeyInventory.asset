@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a433a3558a4ff4bb877dff9269b641, type: 3}
   m_Name: PlayerKeyInventory
   m_EditorClassIdentifier: 
-  container:
-  - item: {fileID: 11400000, guid: b73496e144baedb42bbca85d352569c3, type: 2}
-    amount: 1
+  savePath: /savedata/
+  fileName: keyinv.sugoma
+  container: []
   limit: 1

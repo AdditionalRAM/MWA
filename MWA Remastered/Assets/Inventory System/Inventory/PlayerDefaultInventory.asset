@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a433a3558a4ff4bb877dff9269b641, type: 3}
   m_Name: PlayerDefaultInventory
   m_EditorClassIdentifier: 
-  container:
-  - item: {fileID: 11400000, guid: 6e5573014b7251b428ebefb0ba642d4b, type: 2}
-    amount: 5
+  savePath: /savedata/
+  fileName: definv.sugoma
+  container: []
   limit: 1

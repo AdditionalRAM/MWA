@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 88602c5286b39c84db36f3b2ac05b870, type: 2}
     - target: {fileID: 5899883750495619805, guid: 2aa7d7a1a462ed647a23ea2d134f0c36, type: 3}
       propertyPath: itemName
-      value: Long Knife
+      value: id_item_opknife
       objectReference: {fileID: 0}
     - target: {fileID: 5899883750495619806, guid: 2aa7d7a1a462ed647a23ea2d134f0c36, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

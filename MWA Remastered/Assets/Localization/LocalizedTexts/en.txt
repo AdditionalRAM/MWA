@@ -1,0 +1,1004 @@
+Inventory
+Default
+Consumable
+Equipment
+Key
+Loading
+Damage : 
+Knockback : 
+Healing : 
+Range : 
+Save Point
+Save (Hold)
+Erase (Hold)
+Load (Hold)
+Last Save : 
+Apple
+Sword
+Monster Heart
+Daisy
+Bone
+Healing Potion
+Knife
+OP Knife
+Basement Key
+Dungeon Key
+Chest Key
+Kologrent Key
+Old Man
+Your wife
+Gray boxes
+Hello, young one.
+The weather is pretty nice today.
+Wanted to talk about something?
+My wife?
+She has a story she loves telling everyone.
+Maybe you should go listen to her.
+The gray boxes are monster spawners.
+They create monsters after a while.
+If you ever see one blinking, that indicates a monster spawning.
+You better run away if that's the case.
+Sign
+Kologrent Village
+ENTRANCE CURRENTLY CLOSED FOR SECURITY
+PLEASE USE THE ENTRANCE IN THE ROOM TO THE LEFT
+Kologrent Village
+CURRENTLY ONLY ENTRANCE FOR SECURITY
+Kologrent Cave
+ATTENTION : DANGEROUS AND FILLED WITH MONSTERS
+DO NOT GO IN UNLESS YOU KNOW WHAT YOU ARE DOING
+WARNING : ONE WAY DOOR
+LEAVING IS PROHIBITED
+THOSE WHO LEAVE MAY NEVER RETURN
+The door seems to be locked.
+Item Acquired
+Equip
+Eat
+Drink
+It's a double bed.
+The blanket seems to be newly changed.
+It's a double bed.
+Seems to be very standart in this village.
+A standard wardrobe.
+Kologrent exit
+The cave
+Hello.
+Heard you went into the cave, glad to see you're OK.
+Got anything to talk about?
+The exit???!?!!
+Why? Are you looking to get out of here?
+The exit is at the east end of Maze Forest.
+First the cave, now the exit... Gosh, kids these days....
+There are skeletons in the cave?
+And puzzles?
+And another skeleton that is giant and throws bones?
+Wow. How did you survive that? You must be really brave.
+Hi, honey.
+Did you want to talk about something?
+Oh, I see, you would like to hear about the story.
+Hey, I would actually love some daisy tea right now.
+Why don't you collect some daisies for me near the lake...
+so I can tell you the story while we drink some tea? I will need 3.
+The village entrances have been closed for a while.
+Because of all the monsters since the incident, the village only has one entrance.
+Outside the village is not very secure.
+Old Woman
+The Story
+Village Entrances
+Great! Now let me make the tea and then I will tell the story.
+Honey, could you collect some daisies for me near the lake? I will need 3.
+So that was the story.
+My son, who is currently opening a shop, wanted to attempt to save him.
+After some progress he decided it was too dangerous and stopped. I also think it is very dangerous.
+I just wish he could get a proper job.
+Thanks for listening to my story, I love telling it.
+The tea is nice as well.
+The tea is really nice.
+Wow, heard you went in the cave.
+You are attempting a rescue? That is so dangerous!
+Well, if you are so determined...
+In order to find the parts, you definetely need to go out of Kologrent.
+Now that you have the key, you can go to the east exit of Maze Forest.
+There is a door, which he key should open, but be careful, nobody knows what's behind that door.
+Good luck!
+I am making a shop.
+This is the time! This time I will be successful!
+It's not ready yet, so come back later. (please)
+Fuat
+Don't you see I'm busy!
+Huh. I guess I can take a little break to talk.
+What's up?
+I want to buy from your shop
+I want to save him.
+OH REALLY?!?!?!?!
+I ALREADY GOT MY FIRST CUSTOMER YAY
+But the shop is not ready yet.
+Please come and buy from the shop once it's ready!
+HIM?
+You want to save... HIM?
+I was trying to do exactly that a while back, but I decided it was too dangerous.
+Many useful things are in my secret stash.
+It is a locked trapdoor after the west end of Maze Forest.
+Monster hearts would be really useful for my shop.
+Take this: Bring me 5 monster hearts, and I'll give you the key.
+Monster hearts will drop if you kill a monster. Might wanna ask around the village for a weapon.
+Let's see your power!
+I'll need 5 Monster Hearts if you want the key to my secret stash.
+Damn, you really are powerful.
+Here is the key I promised. As I said, the stash is a trapdoor on the east exit of Maze Forest.
+Go and take whatever you want. Just don't tell anyone, ok?
+My shop still isn't ready.
+You went in the Kologrent Cave?
+stop the cap
+There were skeletons and flying bones?
+Exactly as I remembered.
+And what was at the end? 
+What?
+A huge skeleton who throws bones and small skeletons?
+Damn u really good mate how did u survive that
+My shop still isn't ready though.
+Hello, wanna talk?
+Woman
+What are you cooking?
+I need a self defence weapon
+I am making bread.
+Why, did you want some?
+Unfortunately it will have to cook for a while, so I can't give you any now.
+You need a self defence weapon?!?
+Why would you need such a thing?
+Oh right. The monsters have started spreading even more.
+You know what, take this knife. It's not much, but should be enough for you.
+Hope the knife will be useful for you!
+I heard you went into the cave. Are you OK?
+Did you get to use the knife?
+You used it to get a better weapon?
+You're welcome.
+It's good that you didn't get hurt.
+A long time ago, the robot and his minis used to rule the kingdom.
+Everyone loved him, and he loved us.
+But one day, they came....
+They demanded the management of the kingdom,
+and thereatened to open fire.
+He did not accept it.
+And they did what they said they would do.
+They took the management to themselves,
+and their leader declared himself as King.
+They sealed the robot's minis, his robotic limbs and his head away.
+Nobody knows where, or even dares to attempt rescue him or bring him back.
+The chest is locked.
+It appears to contain an important item.
+The Kologrent Key is no longer here.
+It seems to be locked. You might need a key.
+Using the key, you unlocked the door. The key disappeared.
+Aren't you forgetting something?
+The huge chest in the middle of the room?
+The cave seems dangerous.
+A proper weapon and maybe some healing will come in handy.
+Will you go in now?
+Go in now
+Go in later
+Going in!
+Better to go in later.
+Reset boxes?
+Reset
+Back
+The boxes were reset.
+The boxes were not reset.
+All gray tiles must have a box on top.
+Use the sign above to reset boxes.
+You dare steal my Big Key?
+You won't survive against me!
+Oof, you defeated me.
+One doesn't always win.
+Goodbye.
+I have managed to get some information.
+There is a locked gate at the east exit of Maze Forest.
+I couldn't figure out how to get through yet.
+Will update on this later.
+In the cave at Kologrent Field could be something to open it.
+I'm not ready to go in yet, need to find a better weapon than my current kitchen knife.
+I got a sword.
+I will gather some more information before entering.
+The door seems to be a way to leave Kologrent.
+I definetely need to go through in order to continue my research and operation.
+I am now looking to go and loot Kologrent Cave.
+It is just way too hard.
+I never thought there would be so many monsters in Kologrent Cave.
+I can't really use the sword properly.
+Might be worth it to take some sword training.
+ENTRY NUMBER 1
+ENTRY NUMBER 2
+ENTRY NUMBER 3
+ENTRY NUMBER 4
+ENTRY NUMBER 5
+Kologrent Field
+Kologrent Village
+Maze Forest
+Maze Forest West Exit
+Maze Forest East Exit
+Kologrent Cave
+Secret Cave
+HOLD TO SKIP
+Game paused
+Respawn
+Game Over
+Title Screen
+Giant Skeleton
+Start Game
+Credits
+Yes
+No
+Are you sure you want to go back to the Title Screen? All unsaved progress will be lost.
+The game has to be reloaded to change language. All unsaved progress will be lost. Continue?
+Art
+Music and sounds
+Coding, game design, and some art by
+Tileset : Zelda Like Tileset and Sprites by ArMM1998 on OGA
+The Forest by Wolfgang on OGA
+Spooky Dungeon by You're Perfect Studio on OGA
+Spooky Ambience Backgrond by copyc4t on OGA
+Spy by Nicole Marie T on OGA
+Game Over Screen by MultimediaSwamp on OGA
+(Modified to loop)
+Sound effects created using Bfxr and LeshySFMaker
+Peaceful Village by jkfite01 on OGA
+The Story So Far... by Hitctrl on OGA
+End of Demo
+End of demo - Thanks so much for playing!
+Follow the bushes to reach the Debug Room - your reward for completing the demo!
+If you have any thoughts, feedback, or bugs, please share them on the itch.io page!
+Thanks a lot.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 797d181a6b5883c47b38c5be2ff97656, type: 2}
     - target: {fileID: 5899883750495619805, guid: 2aa7d7a1a462ed647a23ea2d134f0c36, type: 3}
       propertyPath: itemName
-      value: Apple
+      value: id_item_apple
       objectReference: {fileID: 0}
     - target: {fileID: 5899883750495619806, guid: 2aa7d7a1a462ed647a23ea2d134f0c36, type: 3}
       propertyPath: m_IsTrigger

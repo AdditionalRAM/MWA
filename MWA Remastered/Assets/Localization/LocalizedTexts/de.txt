@@ -1,0 +1,1004 @@
+Inventar
+Standart
+Lebensmittel
+Ausrüstung
+Schlüssel
+Wird geladen
+Schaden : 
+Rückstoß : 
+Heilung : 
+Bereich : 
+Speicherpunkt
+Speichern (Halten)
+Löschen (Halten)
+Laden (Halten)
+Zuletzt Gespeichert : 
+Apfel
+Schwert
+Herz des Monsters
+Margerite
+Knochen
+Trank der Heilung
+Messer
+Super Messer
+Kellerschlüssel
+Kerkerschlüssel
+Truhenschlüssel
+Kologrentschlüssel
+Alter Mann
+Deine Frau
+Graue Kisten
+Hallo.
+Das Wetter ist heute schön.
+Mochtest Du über etwas sprechen?
+Meine Frau?
+Sie hat eine Geschichte, die sie gerne erzählt.
+Vielleicht solltest Du sie hören.
+Die Grauen Kisten sind Monster-Spawner.
+Nach ein bisschen Zeit erschaffen sie Monster.
+Wenn Du eine Blinkende siehst, ein Monster ist gleich zu erschaffen.
+Wenn es so ist, sollst Du weglaufen.
+Schild
+Dorf von Kologrent
+EINGANG IST IM MOMENT FÜR SICHERHEIT GESCHLOSSEN
+BITTE BENUTZEN SIE DEN EINGANG NACH LINKS
+Dorf von Kologrent
+IM MOMENT DER EINZIGE EINGANG FÜR SICHERHEIT
+Höhle von Kologrent
+ACHTUNG : GEFÄHRLICH UND VIELE MONSTER
+AUßER WENN DU WEIßT WAS DU TUST NICHT EINGEHEN
+ACHTUNG : EINWEGTÜR
+VERLASSEN IST VERBOTEN
+DIEJENIGEN, DIE VERLASSEN, WERDEN VIELLEICHT NIE ZURÜCKKOMMEN
+Wie es aussieht, ist die Tür verschlossen.
+Artikel Wurde Erworben
+Ausrüsten
+Essen
+Trinken
+Ein Doppelbett.
+Die Decke scheint frisch gewechselt zu sein.
+Ein Doppelbett.
+Es scheint im Dorf Standard zu sein.
+Ein normaler Kleiderschrank.
+Ausgang von Kologrent
+Die Höhle
+Hallo.
+Ich habe gehört, dass Du in die Höhle gingst. Es ist schön, dass es Dir gut geht.
+Hast Du etwas zu besprechen?
+Der Ausgang?!?!
+Warum? Willst Du raus von hier?
+Der Ausgang is am östlicher Ausgang von Labyrinthwald.
+Zuerst die Höhle, und jetzt der Ausgang... Mann, Kinder heutzutage...
+Es gibt Skelette in der Höhle?
+Und Rätsel?
+Und noch ein großes Skelett, das Knochen wirft?
+Wow. Das ist gefährlich. Du musst tapfer sein.
+Hallo, Liebling.
+Mochtest Du über etwas sprechen?
+Aha, Du mochtest die Geschichte hören.
+Hey, ich würde gerne Tee trinken.
+Könntest Du für mich einige Margeriten beim See sammeln...
+damit ich Tee für uns machen und die Geschichte erzählen kann? Ich brauche 3.
+Die Eingänge des Dorfes sind seit einer Weile geschlossen gewesen.
+Weil es so viele Monster seit dem Vorfall gewesen sind, das Dorf hat nur einen Eingang.
+Außer des Dorfes ist nicht so sicher.
+Alte Frau
+Die Geschichte
+Eingänge des Dorfes
+Toll! Jetzt werde ich den Tee kochen und die Geschichte erzählen.
+Liebling, könntest Du für mich 3 Margeriten beim See sammeln?
+Und das war die Geschichte.
+Mein Sohn, der gerade einen Laden eröffnet, wollte ihn retten.
+Irgendwann hat er gesagt, dass es zu gefährlich war. Das denke ich auch.
+Ich wünsche nur, dass er eine gute Arbeit finden könnte.
+Danke fürs Hören meiner Geschichte.
+Der Tee ist auch sehr gut.
+Der Tee ist sehr gut.
+Ich habe gehört, dass Du in die Höhle gingst.
+Du willst ihn retten? Das ist so gefährlich!
+Hmm, wenn Du so entschlossen bist...
+Um die Teile zu finden, musst Du bestimmt raus von Kologrent gehen.
+Jetzt, dass Du den Schlüssel hast, kannst Du durch den östlichen Ausgang von Labyrinthwald gehen.
+Es gibt dort eine Tür, die der Schlüssel öffnen sollte. Aber vorsicht, niemand weiß, was hinter der Tür ist.
+Viel Glück!
+Ich eröffne einen Laden.
+Dies ist die Zeit, in der ich erfolgreich sein werde!
+Aber er ist noch nicht fertig, so komm später (bitte).
+Fuat
+Siehst du nicht, dass ich beschäftigt bin!
+Hmm. Vielleicht könnte ich eine kleine Pause machen, um zu sprechen.
+Was ist los?
+Ich möchte in deinem Laden kaufen
+Ich möchte ihn retten.
+WIRKLICH??
+ICH HABE BEREITS MEINEN ERSTEN KUNDEN
+Aber der Laden ist noch nicht fertig.
+Bitte komm und kauf in ihm, wenn er fertig ist!
+Ihn?
+Du möchtest IHN retten?
+Genau das wollte ich vor einer Weile machen, aber das ist zu gefährlich.
+Es gibt viele nützliche Sachen in meinem versteckten Vorrat.
+Er ist eine verschlossene Falltür am westlichen Ausgang von Labyrinthwald.
+Herzen der Monster wären sehr gut für meinen Laden.
+Nimm diesen Deal : Bring mir 5 Herzen der Monster, und ich werde dir den Schlüssel geben.
+Wenn du ein Monster tötest, bekommst du ein Herz des Monsters. Vielleicht sollst du im Dorf für eine Waffe fragen.
+Lass uns sehen, wie stark du bist!
+Ich brauche 5 Herzen der Monster, wenn du den Schlüssel meines Vorrats möchtest.
+Wow, du bist wirklich stark.
+Hier ist der Schlüssel, den ich versprochen habe. Wie gesagt, der Vorrat ist eine Falltür am östlichen Ausgang von Labyrinthwald.
+Du kannst gehen, und was du willst nehmen.
+Mein Laden ist immer noch nicht fertig.
+Du bist in die Höhle von Kologrent gegangen?
+hör auf zu lügen
+Da war Skeletten und Knochen?
+Genause wie ich errinnere.
+Und was war am Ende?
+Was?
+Ein übergroßes Skelett, das Knochen und kleinere Skelette wirft?
+Wow das sollte sehr schwer sein wie hast du das überlebt
+Mein Laden ist immer noch nicht fertig.
+Hallo, möchtest du reden?
+Frau
+Was kochst du?
+Ich brauche eine Waffe zur Selbstverteidigung
+Ich koche Brot.
+Warum? Mochtest du etwas davon?
+Leider muss es noch kochen, deshalb kann ich dir jetzt keins davon geben.
+Du brauchst eine Waffe zur Selbstverteidigung?
+Warum brauchst du solch eine Sache?
+Ach stimmt. Es gibt noch mehr Monster.
+Weißt du was, nimm dieses Messer. Nichts so gut, aber sollte reichen.
+Ich hoffe, dass das Messer nützlich für dich ist!
+Ich habe gehört, dass du in die Höhle gegangen bist.
+Hast du das Messer benutzt?
+Du hast es benutzt, um etwas Besseres zu finden?
+Gerne geschehen.
+Es ist gut, dass es dir gut geht.
+Vor langer Zeit herrschten der Roboter und seine Minis das Königreich.
+Alle hatten ihn geliebt, und er hatte uns geliebt.
+Aber an einem Tag, war er gekommen...
+Sie forderten die Verwaltung des Königreichs,
+und hatten mit Angriff angedroht.
+Er hatte abgelehnt.
+Und sie hatten gemacht, was sie gesagt haben.
+Sie hatten die Verwaltung zu sich genommen,
+und ihr Leader erklärte sich zum König.
+Sie versiegelten die Minis, die Roboterglieder und sein Kopf.
+Niemand weiß, wo sie sind, wagt es sogar, ihn zu retten oder zurückzubringen.
+Die Truhe ist verschlossen.
+Wie es aussieht, gibt es etwas Wichtiges drinnen.
+Der Kologrent Schlüssel ist nicht mehr da.
+Wie es aussieht, ist die Tür verschlossen. Vielleicht brauchst du einen Schlüssel?
+Mit dem Schlüssel, hast du die Tür geöffnet. Der Schlüssel ist weg.
+Vergisst du etwas?
+Die große Truhe in der Mitte des Raumes?
+Die Höhle sieht gefährlich aus.
+Eine gute Waffe und Heilung könnten gut sein.
+Willst du jetzt eintreten?
+Jetzt eintreten
+Später eintreten
+Du trittst ein!
+Tritt lieber später ein.
+Die Kisten zurücksetzen?
+Zurücksetzen
+Nein
+Die Kisten wurden zurückgesetzt.
+Die Kisten wurden nicht zurückgesetzt.
+Auf jeder grauen Fliese muss eine Kiste sitzen.
+Benutze das Schild oben, um die Kisten zurückzusetzen.
+Wie kannst du es wagen, meinen großen Schlüssel zu stehlen?
+Du wirst mich nicht überleben!
+Autch, du hast mich besiegt.
+Man gewinnt nicht immer.
+Auf nicht wiedersehen.
+Ich konnte einige Informationen bekommen.
+Es gibt eine verschlossene Tür am östlicher Ausgang von Labyrinthwald.
+Ich konnte noch nicht lernen, wie man durchgeht.
+Ich werde bald zurückkommen.
+In der Höhle am Ebene von Kologrent könnte etwas um sie zu öffnen.
+Ich bin noch nicht bereit, reinzugehen. Ich brauche eine Waffe besser als mein Messer.
+Ich habe ein Schwert gefunden.
+Ich brauche einige Informationen bevor ich reingehe.
+Wie es aussieht, kann man durch die Tür Kologrent verlassen.
+Ich muss bestimmt durchgehen, um mit meiner Erforschung weiterzugehen.
+Ich muss bald in die Höhle von Kologrent gehen.
+Es ist einfach zu schwer.
+Ich hatte niemals gedacht, dass es so viele Monster in der Höhle von Kologrent geben könnte.
+Ich kann das Schwert nicht so gut benutzen.
+Vielleicht muss ich tranieren?
+EINTRAG NUMMER 1
+EINTRAG NUMMER 2
+EINTRAG NUMMER 3
+EINTRAG NUMMER 4
+EINTRAG NUMMER 5
+Ebene von Kologrent
+Dorf von Kologrent
+Labyrinthwald
+Westlicher Ausgang von Labyrinthwald
+Östlicher Ausgang von Labyrinthwald
+Höhle von Kologrent
+Verstecke Höhle
+HALTEN UM ZU ÜBERSPRINGEN
+Spiel pausiert
+Wiederleben
+Game Over
+Zurück zum Titelbildschirm
+Riesiges Skelett
+Spiel starten
+Abspann
+Ja
+Nein
+Bist du sicher, dass du zurück zum Titelbildschirm gehen möchtest? Jeder nicht gespeicherte Fortschritt geht verloren.
+Das Spiel muss nochmal laden, um die Sprache zu ändern. Jeder nicht gespeicherte Fortschritt geht verloren. Fortfahren?
+Kunst
+Musik und Soundeffekte
+Programmieren, Spieldesign und etwas Kunst von
+Fliesenset : Zelda Like Tileset and Sprites von ArMM1998 auf OGA
+The Forest von Wolfgang auf OGA
+Spooky Dungeon von You're Perfect Studio auf OGA
+Spooky Ambience Backgrond von copyc4t auf OGA
+Spy von Nicole Marie T auf OGA
+Game Over Screen von MultimediaSwamp auf OGA
+(in Schleife geändert)
+Soundfeffekte mit Bfxr und LeshySFMaker gemacht
+Peaceful Village von jkfite01 auf OGA
+The Story So Far... von Hitctrl auf OGA
+Ende der Demo
+Ende der Demo - danke sehr fürs Spielen!
+Folge den Büschen, um in den Debug-Raum zu gehen!
+Wenn Du etwas zu sagen über das Spiel, oder einen Fehler gefunden hast, bitte sag auf itch.io!
+Danke sehr.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1004 @@
+Envanter
+Normal
+Gıda
+Ekipman
+Anahtar
+Yükleniyor
+Hasar : 
+Savurma : 
+Can Artırma : 
+Menzil : 
+Kayıt Noktası
+Kaydet (Basılı Tut)
+Sil (Basılı Tut)
+Yükle (Basılı Tut)
+En Son Kayıt : 
+Elma
+Kılıç
+Canavar Kalbi
+Papatya
+Kemik
+Can İksiri
+Bıçak
+OP Bıçak
+Bodrum Anahtarı
+Zindan Anahtarı
+Sandık Anahtarı
+Kologrent Anahtarı
+Yaşlı Amca
+Eşin
+Gri kutular
+Merhaba evlat.
+Bugün hava gayet güzel.
+Bir şey hakkında konuşmak mı istedin?
+Eşim mi?
+Onun herkese anlatmayı sevdiği bir hikayesi var.
+Belki de gidip hikayesini dinlemelisin.
+Gri kutular canavar oluşturucuları.
+Bir süre sonra canavar oluştururlar.
+Eğer onlardan birinin yanıp söndüğünü görürsen, bir canavar oluşuyor demektir.
+Öyle olursa kaçsan iyi olabilir.
+Tabela
+Kologrent Köyü
+GİRİŞ ŞU ANDA GÜVENLİK İÇİN KAPALI
+LÜTFEN SOLDAKİ GİRİŞİ KULLANIN
+Kologrent Köyü
+ŞU ANDA GÜVENLİK İÇİN TEK GİRİŞ
+Kologrent Mağarası
+DİKKAT : TEHLİKELİ VE CANAVARLARLA DOLU
+NE YAPTIĞINI BİLMİYOR İSEN GİRME
+DİKKAT : TEK YÖNLÜ KAPI
+AYRILMAK TEHLİKELİ VE YASAKTIR
+AYRILANLAR ASLA DÖNMEYEBİLİR
+Kapı kilitli gibi gözüküyor.
+Eşya Alındı
+Kuşan
+Ye
+İç
+İkili bir yatak.
+Örtüsü yeni değiştirilmiş gibi.
+İkili bir yatak.
+Köyde bayağı standart gibi.
+Normal bir dolap.
+Kologrent'in çıkışı
+Mağara
+Merhaba.
+Mağaraya girdiğini duydum. İyi olman güzel.
+Anlatacak bir şeyin var mı?
+Çıkış mı?!?
+Neden? Buraları bırakıp gitmek mi istiyorsun?
+Çıkş Labirent Ormanı'nın doğu çıkışında.
+Önce mağara, şimdi de çıkış... Bu çocuklara ne olmuş ya.
+Mağarada iskeletler mi var?
+Ve bulmacalar?
+Ve bir tane de dev gibi ve kemik fırlatan iskelet?
+Vay be. Oradan nasıl sağ çıkabildin?
+Merhaba canım.
+Bir şey hakkında konuşmak mı istedin?
+Aha, hikayeyi duymak istiyorsun.
+Baksana, şu anda bir bardak papatya çayı çok iyi giderdi.
+Bana gölün yakınından birkaç tane papatya toplayabilir misin?
+Böylece çay eşliğinde hikaye anlatabilirim. 3 taneye ihtiyacım olacak.
+Köyün girişleri bir süredir kapalı.
+Olaydan beri o kadar canavar var ki, güvenlik amaçlı olarak girişlerden biri kapatıldı.
+Köyün dışı pek güvenli değil.
+Yaşlı Teyze
+Hikayen
+Köyün girişeri
+Güzel! Şimdi bir çay yapayım da hikayeyi anlatayım.
+Canım, bana gölün yakınından 3 adet papatya toplayabilir misin?
+Ve hikayem buydu.
+Şu anda bir market açmaya uğraşan oğlum onu kurtaracaktı.
+Bir süre sonra oldukça tehlikeli olduğunu farketti ve bıraktı. Bu konuda ona katılıyorum.
+Ama keşke güzel bir iş bulabilse.
+Hikayemi dinlediğin için teşekkür ederim.
+Çay da gayet hoş.
+Çay gayet hoş.
+Mağaraya girdiğini duydum. 
+Onu kurtarmaya mı çalışıyorsun? Bu çok tehlikeli!
+Hmm, madem o kadar istiyorsun...
+Parçaları bulabilmek için kesinlikle Kologrent'ten çıkman gerekiyor.
+Anahtarı aldığına göre, Labirent Ormanı'nın doğu çıkışına gidebilirsin.
+Orda bu anahtarla açılması gereken bir kapı var, ama dikkatli ol. Kapının arkasında ne olduğunu kimse bilmiyor.
+Bol şans!
+Bir market açıyorum.
+Bu sefer başarılı olacağım!
+Ama henüz hazır değil, bu yüzden sonra gel (lütfen).
+Fuat
+Meşgul olduğumu görmüyor musun!
+Hmm. Belki de ufak bir mola verip konuşabilirim.
+Nasıl gidiyor?
+Senin marketinden alışveriş yapmak istiyorum
+Onu kurtarmak istiyorum
+CİDDEN Mİ??
+HADİ BAKİM ÇOKTAN İLK MÜŞTERİMİ BULDUM
+Ama market henüz hazır değil.
+Hazır olduğunda lütfen gel ve alışveriş yap.
+Onu mu?
+ONU mu kurtarmak istiyorsun?
+Bir süre önce tam olarak bunu yapacaktım, ancak çok tehlikeli.
+Lazım olacak bazı şeyler benim gizli mağaramda.
+Kendisi Labirent Ormanı'nın batı çıkışında bir kapı.
+Canavar kalpleri benim market için işe yarar.
+Bak şimdi : Bana 5 canavar kalbi getir, ben de sana anahtarı vereyim.
+Bir canavar öldürünce kalbi düşer. Köydekilerden bir silah istesen iyi olabilir.
+Bakalım ne kadar güçlüsün!
+Benim gizli yerimin anahtarını istiyorsan 5 canavar kalbi getir.
+Vay be, cidden güçlüsün.
+İşte sözünü verdiğim anahtar. Dediğim gibi, gizli yerim Labirent Ormanı'nın batı çıkışında.
+Git ve ne istersen al gitsin.
+Marketim hala hazır değil.
+Kologrent Mağarası'na mı girdin?
+yalan atma
+İskeletler ve kemikler mi vardı?
+Tam hatırladığım gibi.
+Ve sonunda ne var?
+Nee?
+Küçük iskeletler ve kemikler fırlatan koca bir iskelet mi?
+Vay be çok zor olmuş olmalı nasıl sağ çıktıın
+Marketim hala hazır değil.
+Merhaba, konuşmak ister misin?
+Kadın
+Ne pişiriyorsun?
+Kendimi korumak için bir silaha ihtiyacım var
+Ekmek pişiriyorum.
+Neden? Bir parça mı istemiştin?
+Ne yazık ki daha pişmesi lazım, yani şu anda hiç veremem.
+Kendini korumak için bir silaha mı ihtiyacın var?
+Neden böyle bir şeye ihtiyacın olsun ki?
+Hee doğru, daha da çok canavarlar var.
+Baksana, sana bu bıçağı vereyim. Çok iyi değil ama idare eder.
+Umarım bıçak senin için kullanışlıdır.
+Mağaraya girdiğini duydum.
+Bıçağımı kullandın mı?
+Daha iyi bir şey almak için mi kullandın?
+Rica ederim.
+İyi olman güzel.
+Uzun zaman önce Robot ve Minileri krallığı yönetirdi.
+Herkes onu severdi, biz de onu severdik.
+Ama bir gün, onlar geldi...
+Krallığın yönetimini istediler,
+ve saldırıyla tehdit ettiler.
+O kabul etmedi.
+Ve dediklerini yaptılar.
+Yönetimi kendilerine aldılar,
+ve liderleri kendini kral ilan etti.
+Robotun Minilerini ve parçalarını mühürleyip sakladılar.
+Kimse nerede olduklarını bilmiyor, veya öğrenmeye cesaret edemiyor.
+Sandık kilitli.
+İçinde önemli bir şey varmış gibi duruyor.
+Kologrent anahtarı artık burada değil.
+Kapı kilitli gibi gözüküyor. Belki bir anahtar lazım?
+Anahtarı kullanarak kapıyı açtın. Anahtar kayboldu.
+Bir şey unutmuyor musun?
+Odanın ortasındaki koca sandık?
+Mağara tehlikeli duruyor.
+Güzel bir silah ve biraz iyileştirme iyi olabilir.
+Şimdi girecek misin?
+Şimdi gir
+Sonra gir
+Giriliyor!
+Sonra girmek daha iyi.
+Kutular sıfırlansın mı?
+Sıfırla
+Hayır
+Kutular sıfırlandı.
+Kutular sıfırlanmadı.
+Her gri karenin üstünde bir kutu durmalı.
+Kutuları sıfırlamak için yukarıdaki tabelayı kullanın.
+Büyük Anahtar'ımı çalmaya nasıl cesaret edersin?
+Bana karşı hiç şansın yok!
+Tüh, beni yendin.
+Her zaman kazanamam ya.
+Görüşmemek üzere.
+Biraz bilgi toplayabildim.
+Labirent Ormanı'nın doğu çıkışında kilitli bir kapı var.
+Henüz oradan nasıl geçeceğimi anlayamadım.
+Yakında döneceğim.
+Kırlardaki mağarada onu açacak bir şey olabilir.
+Henüz içeri girmeye hazır değilim. Şu anki bıçağımdan daha iyi bir silaha ihtiyacım var.
+Bir kılıç buldum.
+İçeri girmeden önce biraz daha bilgiye ihtiyacım var.
+Görünüşe bakılırsa kapıyı kullanarak Kologrent'ten ayrılınabilir.
+Keşfe devam etmek için kesinlikle oradan gitmem gerekiyor.
+Yakında Kologrent Mağarası'na girmeliyim.
+Çok zor.
+Hiçbir zaman mağarada bu kadar canavar olacağını tahmin etmemiştim.
+Kılıcı çok iyi kullanamıyorum.
+Belki de eğitim almalıyım?
+1 NUMARALI GİRDİ
+2 NUMARALI GİRDİ
+3 NUMARALI GİRDİ
+4 NUMARALI GİRDİ
+5 NUMARALI GİRDİ
+Kologrent Kırları
+Kologrent Köyü
+Labirent Ormanı
+Labirent Ormanı Batı Çıkışı
+Labirent Ormanı Doğu Çıkışı
+Kologrent Mağarası
+Gizli Mağara
+GEÇMEK İÇİN BASILI TUT
+Oyun durduruldu
+Yeniden canlan
+Oyun bitti
+Ana Menü
+Dev İskelet
+Oyunu başlat
+Yapımcı
+Evet
+Hayır
+Ana menüye dönmek istediğinden emin misin? Kaydedilmemiş ilerlemen silinecek.
+Dili değiştirmek için oyunun yeniden yüklenmesi gerekiyor. Kaydedilmemiş ilerlemen silinecek. Devam edecek misin?
+Çizimler
+Müzik ve ses efektleri
+Programlama, oyun tasarımı ve bazı çizimler:
+Tileset : Zelda Like Tileset and Sprites by ArMM1998 on OGA
+OGA'da Wolfgang'dan The Forest
+OGA'da You're Perfect Studio'dan Spooky Dungeon
+OGA'da copyc4t'den Spooky Ambience Background
+OGA'da Nicole Marie'den Spy
+OGA'da MultimediaSwamp'tan Game Over Screen
+(tekrarlaması için değiştirildi)
+Ses efektleri Bfxr ve LeshySFMaker ile yapılmıştır
+OGA'da jkfite01'den Peaceful Village
+OGA'da Hitctrl'den The Story So Far...
+Denemenin sonu
+Denemenin sonu - oynadığın için teşekkürler!
+Debug Odasına gitmek için çalıları takip et!
+Oyun hakkında söyleyecek bir şeyin, geri bildirimin veya bulduğun bir hata varsa itch.io'da söylemen çok iyi olur!
+Çok teşekkürler.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

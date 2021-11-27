@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 979673386042816060}
   - component: {fileID: 979673386042816062}
   - component: {fileID: 979673386042816063}
+  - component: {fileID: 6135331893691354682}
   m_Layer: 5
   m_Name: AcquiredText
   m_TagString: Untagged
@@ -34,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: 0}
-  m_SizeDelta: {x: 425, y: 125}
+  m_AnchoredPosition: {x: 75, y: 26.6376}
+  m_SizeDelta: {x: 402.8606, y: 53.2753}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &979673386042816062
 CanvasRenderer:
@@ -69,7 +70,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: f8fe1b94688e5e3439ae36e32e85fa22, type: 3}
     m_FontSize: 41
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 42
     m_Alignment: 1
@@ -79,6 +80,22 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Item Acquired
+--- !u!114 &6135331893691354682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979673386042816061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567c31620592b5d479611d804a2da9af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textID: id_itemacq
+  localize: 1
+  localizeOnAwake: 1
+  myText: {fileID: 0}
 --- !u!1 &979673386330640613
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,8 +242,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: 0}
-  m_SizeDelta: {x: 425, y: 125}
+  m_AnchoredPosition: {x: 75, y: -31.25}
+  m_SizeDelta: {x: 425, y: 62.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &979673386671155959
 CanvasRenderer:
@@ -260,16 +277,16 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: f8fe1b94688e5e3439ae36e32e85fa22, type: 3}
     m_FontSize: 41
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 42
-    m_Alignment: 7
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1 Apple
+  m_Text: 2x Apple
 --- !u!1 &979673386735878608
 GameObject:
   m_ObjectHideFlags: 0

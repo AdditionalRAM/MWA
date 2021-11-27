@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class InventoryTabManager : MonoBehaviour
 {
+    UIReferences ui;
     Animator an;
+    public GameObject currentInfoTab;
     public GameObject[] itemMenus;
     public Button[] menuButtons;
 
-    private void Awake()
+    private void Start()
     {
+        ui = FindObjectOfType<UIReferences>();
         an = GetComponent<Animator>();
         SwitchTab(0);
     }
@@ -23,6 +26,7 @@ public class InventoryTabManager : MonoBehaviour
     public void AnimateClosing()
     {
         an.SetBool("visible", false);
+        if (currentInfoTab != null) currentInfoTab.GetComponent<ItemInfoTab>().DisableTab();
     }
 
     public void SwitchTab(int i)
@@ -31,6 +35,32 @@ public class InventoryTabManager : MonoBehaviour
         foreach(Button menuButton in menuButtons) menuButton.interactable = true;
         menuButtons[i].interactable = false;
         itemMenus[i].SetActive(true);
+        if (currentInfoTab != null) currentInfoTab.GetComponent<ItemInfoTab>().DisableTab();
+    }
+
+    public void SaveInventories()
+    {
+        foreach (GameObject invD in itemMenus)
+        {
+            invD.GetComponent<InventoryDisplay>().inventory.Save();
+        }
+    }
+
+    public void LoadInventories()
+    {
+        foreach (GameObject invD in itemMenus)
+        {
+            InventoryDisplay inventar = invD.GetComponent<InventoryDisplay>();
+            inventar.inventory.Load(inventar);
+        }
+    }
+
+    public void EraseInventories()
+    {
+        foreach (GameObject invD in itemMenus)
+        {
+            invD.GetComponent<InventoryDisplay>().inventory.Erase();
+        }
     }
 
 }

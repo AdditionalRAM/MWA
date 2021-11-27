@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class InventoryDisplay : MonoBehaviour
 {
+    public InventoryTabManager myTabs;
     public InventoryObject inventory;
     public PlayerItem player;
+    public AudioSource useAudio;
 
     public float startX, startY;
     public float xSpaceBetweenItems, ySpaceBetweenItems;
@@ -15,8 +17,14 @@ public class InventoryDisplay : MonoBehaviour
 
     private void Awake()
     {
-        CreateDisplay();
+        myTabs = transform.parent.GetComponent<InventoryTabManager>();
+        Rerender();
         inventory.invDisplay = this;
+    }
+
+    private void OnEnable()
+    {
+        Rerender();
     }
     private void Update()
     {
@@ -37,9 +45,7 @@ public class InventoryDisplay : MonoBehaviour
                 GameObject obj = Instantiate(slot.item.prefab, Vector3.zero, Quaternion.identity, transform);
                 obj.GetComponent<RectTransform>().localPosition = GetPosition(i);
                 obj.GetComponentInChildren<Text>().text = slot.amount.ToString("n0");
-                obj.GetComponent<InventoryButtons>().invDisplay = this;
-                obj.GetComponent<InventoryButtons>().myItem = slot.item;
-                obj.GetComponent<InventoryButtons>().val = i;
+                obj.GetComponent<InventoryButtons>().Innit(this, slot.item, i);
                 itemsDisplayed.Add(slot, obj);
             }
         }
@@ -53,9 +59,6 @@ public class InventoryDisplay : MonoBehaviour
             GameObject obj = Instantiate(slot.item.prefab, Vector3.zero, Quaternion.identity, transform);
             obj.GetComponent<RectTransform>().localPosition = GetPosition(i);
             obj.GetComponentInChildren<Text>().text = slot.amount.ToString("n0");
-            obj.GetComponent<InventoryButtons>().invDisplay = this;
-            obj.GetComponent<InventoryButtons>().myItem = slot.item;
-            obj.GetComponent<InventoryButtons>().val = i;
             obj.GetComponent<InventoryButtons>().Innit(this, slot.item, i);
             itemsDisplayed.Add(slot, obj);
         }
@@ -66,7 +69,7 @@ public class InventoryDisplay : MonoBehaviour
         return new Vector3(startX + xSpaceBetweenItems * (i % columnCount), startY + ySpaceBetweenItems * (i / columnCount));
     }
 
-    public void Consume(int val)
+    public void Consume(int val, AudioClip useSound)
     {
         if(inventory.container[val].item.type == ItemType.Consumable)
         {
@@ -75,8 +78,12 @@ public class InventoryDisplay : MonoBehaviour
             {
                 if (player.Healable())
                 {
+                    if(useSound != null && useAudio != null)
+                    {
+                        useAudio.clip = useSound;
+                        useAudio.Play();
+                    }
                     player.Heal(slot.item.consumableItem.restoredHealth);
-
                     inventory.RemoveItem(slot.item, 1);
                 }
             }
@@ -92,8 +99,8 @@ public class InventoryDisplay : MonoBehaviour
     {
         foreach (GameObject butt in itemsDisplayed.Values)
         {
-            if(butt.GetComponent<Button>() != null)
-            butt.GetComponent<Button>().interactable = true;
+            if (butt.GetComponent<Button>() != null)
+                butt.GetComponent<InventoryButtons>().Revert();
         }
         player.UnequipItem();
     }

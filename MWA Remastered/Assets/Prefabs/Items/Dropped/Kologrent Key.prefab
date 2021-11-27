@@ -96,9 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23be5df766bdab8469e3ff5e033e9e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localize: 1
   item: {fileID: 11400000, guid: f2526b2cb4eba2c4c99ce0c694a5a8a3, type: 2}
   itemAmount: 1
-  itemName: Kologrent Key
+  itemName: id_item_kologrentkey
   obtained: 0
 --- !u!61 &5899883750495619806
 BoxCollider2D:

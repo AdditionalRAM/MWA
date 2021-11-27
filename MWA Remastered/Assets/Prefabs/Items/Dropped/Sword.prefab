@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 8bb229fb4d8abf041b2ee3c1aa47579d, type: 2}
     - target: {fileID: 5899883750495619805, guid: 2aa7d7a1a462ed647a23ea2d134f0c36, type: 3}
       propertyPath: itemName
-      value: Sword
+      value: id_item_sword
       objectReference: {fileID: 0}
     - target: {fileID: 5899883750495619806, guid: 2aa7d7a1a462ed647a23ea2d134f0c36, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
