@@ -14,8 +14,9 @@ public class PlayerItem : MonoBehaviour
     public GameObject crosshair, aimStickIndicator;
     public Transform itemParent;
     public Item selectedItem;
+    public ArmorObject equippedArmor, sunglasses;
 
-    public InventoryObject defInventory, consumeInventory, equipInventory, keyInventory;
+    public InventoryObject defInventory, consumeInventory, equipInventory, keyInventory, armorInventory;
 
     public GameObject acquirePrefab;
     public Transform canvas;
@@ -40,7 +41,8 @@ public class PlayerItem : MonoBehaviour
             {
                 RotateItem();
             }
-            selectedItem.player = this;
+            selectedItem.owner = gameObject;
+            selectedItem.crosshair = crosshair.transform;
         }
     }
 
@@ -92,6 +94,8 @@ public class PlayerItem : MonoBehaviour
             {
                 susRenderer.flipX = true;
             }
+            if (selectedItem.GetComponent<IOnRotateItem>() != null && aimInput.magnitude > 0.1)
+                selectedItem.GetComponent<IOnRotateItem>().OnRotate();
         }
     }
 
@@ -133,6 +137,9 @@ public class PlayerItem : MonoBehaviour
                 else if (item.item.type == ItemType.Key)
                 {
                     keyInventory.AddItem(item.item, item.itemAmount);
+                }else if (item.item.type == ItemType.Armor)
+                {
+                    armorInventory.AddItem(item.item, item.itemAmount);
                 }
                 pickupSound.Play();
                 StartCoroutine(AnimateAcquiring(item.item, item.itemAmount, item.itemName));
@@ -223,6 +230,26 @@ public class PlayerItem : MonoBehaviour
         GameObject destroyItem = selectedItem.gameObject;
         selectedItem = null;
         Destroy(destroyItem);
+    }
+
+    public void EquipArmor(ArmorObject armor)
+    {
+        if (armor == sunglasses)
+        {
+            altScript.wearingSunglasses = true;
+            altScript.RefreshLighting();
+        }
+        else if(equippedArmor == sunglasses)
+        {
+            altScript.wearingSunglasses = false;
+            altScript.RefreshLighting();
+        }
+        equippedArmor = armor;
+        altScript.an.SetInteger("armor", armor.armorID);
+        //do protection stuff
+        altScript.maxArmor = armor.extraHealth;
+        altScript.StartArmorRegen();
+        altScript.UpdateHealth();    
     }
 
     private void OnDestroy()

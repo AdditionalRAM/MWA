@@ -7,10 +7,20 @@ public interface IUsableItem{
     void OnUse();
 }
 
+public interface IOnRotateItem
+{
+    void OnRotate();
+}
+
 public interface IDamage
 {
     void Damaged(float dmg);
     void TakeKB(System.Single kbtime, float thrust, Vector3 otherPos);
+}
+
+public interface ISelectiveDamage
+{
+    void Damaged(float dmg, ItemObject item);
 }
 
 public interface IUseSaveGame

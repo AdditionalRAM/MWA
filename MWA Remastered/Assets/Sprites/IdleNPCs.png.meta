@@ -38,6 +38,18 @@ TextureImporter:
   - first:
       213: -840148708588255864
     second: woman1_1
+  - first:
+      213: -622606819924997537
+    second: man2_0
+  - first:
+      213: 2147185839770201455
+    second: woman2_1
+  - first:
+      213: -9066052523511537785
+    second: woman2_0
+  - first:
+      213: 2358559861594943257
+    second: man2_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -386,6 +398,90 @@ TextureImporter:
       bones: []
       spriteID: 885081a63313754f0800000000000000
       internalID: -840148708588255864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man2_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a82af556e0c57f0800000000000000
+      internalID: -622606819924997537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woman2_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d604e15265ccd10800000000000000
+      internalID: 2147185839770201455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: woman2_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f9f0d8349ee2280800000000000000
+      internalID: -9066052523511537785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f6cdba2b94bb020800000000000000
+      internalID: 2358559861594943257
       vertices: []
       indices: 
       edges: []

@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 524360403982662449}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.1, y: -0.02, z: 0}
-  m_LocalScale: {x: -1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: -1.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,12 +99,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7944c53daee139f4eb2087fe27c54a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  owner: {fileID: 0}
   rotateOffset: -90
   range: 5
   damage: 30
   myItem: {fileID: 11400000, guid: 88602c5286b39c84db36f3b2ac05b870, type: 2}
   useSound: {fileID: -4354187418412666656}
+  autoPlaySound: 1
+  crosshair: {fileID: 0}
   kbTime: 0.2
   kbThrust: 2
   defaultPos: {x: -0.1, y: -0.02, z: 0}

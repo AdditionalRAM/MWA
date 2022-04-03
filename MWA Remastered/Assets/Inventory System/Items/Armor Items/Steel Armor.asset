@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae3743f98a16294ba28ea69ed581352, type: 3}
+  m_Name: Steel Armor
+  m_EditorClassIdentifier: 
+  defItem: {fileID: 0}
+  consumableItem: {fileID: 0}
+  equipItem: {fileID: 0}
+  armorItem: {fileID: 11400000}
+  keyItem: {fileID: 0}
+  prefab: {fileID: 6344024212514863516, guid: f9357e1cf602a6d43a87bd0eae9139f7, type: 3}
+  type: 2
+  description: 
+  extraHealth: 10
+  armorID: 3
+  equipped: 0

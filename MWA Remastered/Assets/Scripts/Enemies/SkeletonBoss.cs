@@ -23,6 +23,7 @@ public class SkeletonBoss : MonoBehaviour, IDamage
     public Transform[] skeleSpawners;
 
     public float speed = 200f;
+    public float kbCooldown;
     public float nextWaypointDistance = 3f;
 
     Path path;
@@ -119,6 +120,17 @@ public class SkeletonBoss : MonoBehaviour, IDamage
         }
     }
 
+    IEnumerator KBCooldown()
+    {
+        yield return new WaitForSeconds(kbCooldown);
+        takingKB = false;
+    }
+
+    public void DoneKB()
+    {
+        StartCoroutine(KBCooldown());
+    }
+
     public void ThrowBones()
     {
         StartCoroutine(ThrowBoneCo());
@@ -170,11 +182,6 @@ public class SkeletonBoss : MonoBehaviour, IDamage
             yield return new WaitForSeconds(.5f);
             walk = true;
         }
-    }
-
-    public void DoneKB()
-    {
-        takingKB = false;
     }
 
     IEnumerator DamageTint()

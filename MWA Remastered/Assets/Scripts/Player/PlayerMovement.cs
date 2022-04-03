@@ -17,10 +17,11 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
     public ControlStyle cstyle;
     public PlayerItem altScript;
     public AudioSource hurtSound;
+    public GameObject torch;
 
     public GameObject placeholderGameOver;
 
-    Animator an;
+    public Animator an;
     Rigidbody2D rb;
     SpriteRenderer sRenderer;
 
@@ -29,7 +30,7 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
     public Joystick movestick;
     public GameObject movestickIndicator;
     public Color damageColor;
-    public UIBar healthBar;
+    public UIBar healthBar, armorBar;
     Color normalColor;
 
     public string currentPlaceName;
@@ -39,11 +40,18 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
     public float movementSpeed;
     public float maxHealth;
     public float health;
+    public float maxArmor, armor;
+    public float armorRegenDelay, armorRegenRate, armorRegenTime;
+    public bool regenerateArmor = true, armorRegenerating = false;
+    public float sunglassesMultiplier, currentRoomLight;
+    public bool wearingSunglasses;
     public int fps;
 
     public bool freeze;
     public bool iFrames;
     public bool takenKB;
+
+    IEnumerator armorRegenCo;
 
     private void Awake()
     {      
@@ -54,6 +62,7 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
         sRenderer = GetComponent<SpriteRenderer>();
         normalColor = sRenderer.color;
         health = maxHealth;
+        UpdateHealth();
         healthBar.SetMaxValue(maxHealth, false);
         iFrames = false;
     }
@@ -83,7 +92,6 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
         {
             QualitySettings.vSyncCount = 1;
         }
-        
     }
 
     private void FixedUpdate()
@@ -126,8 +134,32 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
         if (!iFrames)
         {
             hurtSound.Play();
-            healthBar.an.SetTrigger("shake");
-            health -= dmg;
+            if(maxArmor > 0)
+            {
+                if(armor > 0)
+                {
+                    armor -= dmg;
+                    armorBar.an.SetTrigger("shake");
+                    if (armor < 0) armor = 0;
+                    if (regenerateArmor && !armorRegenerating) {
+                        StartArmorRegen();
+                    }
+                    else if (armorRegenerating)
+                    {
+                        StartArmorRegen();
+                    }
+                }
+                else
+                {
+                    healthBar.an.SetTrigger("shake");
+                    health -= dmg;
+                }
+            }
+            else
+            {
+                health -= dmg;
+                healthBar.an.SetTrigger("shake");
+            }
             UpdateHealth();
             StartCoroutine(DamageTint());
         }    
@@ -148,11 +180,25 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
     public void UpdateHealth()
     {
         if (health > maxHealth) health = maxHealth;
+        if(maxArmor > 0)
+        {
+            if (armor > maxArmor) armor = maxArmor;
+            armorBar.gameObject.SetActive(true);
+            armorBar.SetMaxValue(maxArmor, true);
+            armorBar.SetValue(armor);
+        }
+        else
+        {
+            armorBar.gameObject.SetActive(false);
+            armor = 0;
+        }
         healthBar.SetValue(health);
         if (health <= 0)
         {
             freeze = true;
             ui.gameOverManger.GameOver(transform);
+            maxArmor = 5000;
+            armor = 5000;
         }
     }
 
@@ -163,5 +209,44 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
         yield return new WaitForSecondsRealtime(.2f);
         sRenderer.color = normalColor;
         iFrames = false;
+    }
+
+    IEnumerator RegenerateArmor()
+    {
+        armorRegenerating = true;
+        yield return new WaitForSeconds(armorRegenDelay);
+        for (int i = 0; i < maxArmor; i++)
+        {
+            armor += armorRegenRate;
+            UpdateHealth();
+            if (armor >= maxArmor) break;
+            yield return new WaitForSeconds(armorRegenTime);
+        }
+        armorRegenerating = false;
+    }
+
+    public void StartArmorRegen()
+    {
+        if(armorRegenCo != null) StopCoroutine(armorRegenCo);
+        armorRegenCo = RegenerateArmor();
+        StopCoroutine(armorRegenCo);
+        StartCoroutine(armorRegenCo);
+    }
+
+    public void RefreshLighting()
+    {
+        SetLighting(currentRoomLight, 0.5f);
+    }
+
+    public void SetLighting(float lightIntensity, float lightTweenDuration)
+    {
+        torch.SetActive(lightIntensity < 1);
+        currentRoomLight = lightIntensity;
+        if (wearingSunglasses)
+        {
+            lightIntensity *= sunglassesMultiplier;
+        }
+        if (ui.globalLight.intensity != lightIntensity)
+            DOTween.To(() => ui.globalLight.intensity, x => ui.globalLight.intensity = x, lightIntensity, lightTweenDuration);
     }
 }

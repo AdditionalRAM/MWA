@@ -9,6 +9,9 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory/Inventory")]
 public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 {
+    public ItemType inventoryType;
+    public int equippedID;
+
     public string savePath, fileName;
     public List<InventorySlot> container = new List<InventorySlot>();
     public int limit;
@@ -20,15 +23,17 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
     {
         #if UNITY_EDITOR
             database = (ItemDatabaseObject)AssetDatabase.LoadAssetAtPath("Assets/Resources/Database.asset", typeof(ItemDatabaseObject));
-        #else
+#else
             database = Resources.Load<ItemDatabaseObject>("Database");
-        #endif
+#endif
     }
 
     public void AddItem(ItemObject _item, int _amount)
     {        
         if (!HasItem(_item, 1))
         {
+            Debug.Log(_item);
+            Debug.Log(database.GetItem[26]);
             container.Add(new InventorySlot(database.GetId[_item], _item, _amount));
         }
         else
@@ -87,6 +92,7 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
         }
     }
 
+
     public void Save()
     {
         if(!Directory.Exists(Application.persistentDataPath + savePath))
@@ -110,8 +116,50 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
             FileStream stream = File.Open(nowSavePath, FileMode.Open);
             JsonUtility.FromJsonOverwrite(bf.Deserialize(stream).ToString(), this);
             stream.Close();
-            if (invenDisplay != null)
-                invenDisplay.Rerender();
+            if (inventoryType == ItemType.Armor && !HasItem(database.emptyArmor, 1))
+            {
+                AddItem(database.emptyArmor, 1);
+            }
+            else if (inventoryType == ItemType.Equipment && !HasItem(database.emptyEquipment, 1))
+            {
+                AddItem(database.emptyEquipment, 1);
+            }
+            if (invenDisplay != null) {
+                invenDisplay.Rerender(); 
+                if(inventoryType == ItemType.Equipment)
+                {
+                    if(equippedID != 0 && database.GetItem[equippedID].type == ItemType.Equipment)
+                    {
+                        invenDisplay.Equip(database.GetItem[equippedID].equipItem);
+                    }
+                    else
+                    {
+                        invenDisplay.Equip(database.emptyEquipment.equipItem);
+                    }
+                }
+                if (inventoryType == ItemType.Armor)
+                {
+                    if (equippedID != 0 && database.GetItem[equippedID].type == ItemType.Armor)
+                    {
+                        invenDisplay.EquipArmor(database.GetItem[equippedID].armorItem);
+                    }
+                    else
+                    {
+                        invenDisplay.EquipArmor(database.emptyArmor.armorItem);
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (inventoryType == ItemType.Armor && !HasItem(database.emptyArmor, 1))
+            {
+                AddItem(database.emptyArmor, 1);
+            }
+            else if (inventoryType == ItemType.Equipment && !HasItem(database.emptyEquipment, 1))
+            {
+                AddItem(database.emptyEquipment, 1);
+            }
         }
     }
 
@@ -122,6 +170,11 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
         {
             File.Delete(nowSavePath);
         }
+    }
+
+    public void iEquippedItem(ItemObject item)
+    {
+        equippedID = database.GetId[item];
     }
 }
 

@@ -7,6 +7,7 @@ public class InventoryTabManager : MonoBehaviour
 {
     UIReferences ui;
     Animator an;
+    public Animator buttAN;
     public GameObject currentInfoTab;
     public GameObject[] itemMenus;
     public Button[] menuButtons;
@@ -21,11 +22,13 @@ public class InventoryTabManager : MonoBehaviour
     public void AnimateOpening()
     {
         an.SetBool("visible", true);
+        buttAN.SetBool("visible", true);
     }
 
     public void AnimateClosing()
     {
         an.SetBool("visible", false);
+        buttAN.SetBool("visible", false);
         if (currentInfoTab != null) currentInfoTab.GetComponent<ItemInfoTab>().DisableTab();
     }
 

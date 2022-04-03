@@ -92,6 +92,8 @@ public class InventoryDisplay : MonoBehaviour
 
     public void Equip(EquipmentObject itemToEquip)
     {
+        if (player == null) Debug.Log("Need backup coroutunio");
+        inventory.iEquippedItem(itemToEquip);
         player.EquipItem(itemToEquip.equipPrefab);
     }
 
@@ -103,6 +105,21 @@ public class InventoryDisplay : MonoBehaviour
                 butt.GetComponent<InventoryButtons>().Revert();
         }
         player.UnequipItem();
+    }
+
+    public void EquipArmor(ArmorObject armorToEquip)
+    {
+        player.EquipArmor(armorToEquip);
+        inventory.iEquippedItem(armorToEquip);
+    }
+
+    public void UnequipArmor()
+    {
+        foreach (GameObject butt in itemsDisplayed.Values)
+        {
+            if (butt.GetComponent<Button>() != null)
+                butt.GetComponent<InventoryButtons>().Revert();
+        }
     }
 
     public void Rerender()

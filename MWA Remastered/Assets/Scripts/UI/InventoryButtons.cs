@@ -38,6 +38,13 @@ public class InventoryButtons : MonoBehaviour
                 myImg.color = imColor;
                 canUse = false;
             }
+        }else if (myItem.type == ItemType.Armor)
+        {
+            if (invDisplay.player.equippedArmor == myItem.armorItem)
+            {
+                myImg.color = imColor;
+                canUse = false;
+            }
         }
     }
 
@@ -51,6 +58,7 @@ public class InventoryButtons : MonoBehaviour
         if (invDisplay.myTabs.currentInfoTab != null) invDisplay.myTabs.currentInfoTab.GetComponent<ItemInfoTab>().DisableTab();
         invDisplay.myTabs.currentInfoTab = Instantiate(infotabPrefab, invDisplay.transform.parent);
         ItemInfoTab infoTab = invDisplay.myTabs.currentInfoTab.GetComponent<ItemInfoTab>();
+        Debug.Log(infoTab);
         Vector3 windowOffset = Vector3.zero;
         if (Mathf.Sign(transform.position.y) == 1) windowOffset.y = Screen.height / -6.75f;
         else windowOffset.y = Screen.height / 6.75f;
@@ -65,7 +73,7 @@ public class InventoryButtons : MonoBehaviour
         {
             infoTab.useButton.onClick.AddListener(OnInteract);
         }
-        else Destroy(infoTab.useButton.transform.parent.gameObject);
+        else Destroy(infoTab.useButton.gameObject);
     }
 
     public void OnInteract()
@@ -92,6 +100,13 @@ public class InventoryButtons : MonoBehaviour
                 canUse = false;
             }
 
+        }
+        else if (myItem.type == ItemType.Armor && !myItem.armorItem.equipped)
+        {
+            invDisplay.UnequipArmor();
+            invDisplay.EquipArmor(myItem.armorItem);
+            myImg.color = imColor;
+            canUse = false;
         }
     }
 

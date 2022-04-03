@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.UI;
 
 public class UIReferences : MonoBehaviour
@@ -21,4 +22,7 @@ public class UIReferences : MonoBehaviour
 
     //pause
     public Transform disableOnPause, pauseMenu, gameOverMenu;
+
+    //lighting 
+    public Light2D globalLight;
 }

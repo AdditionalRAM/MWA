@@ -26,14 +26,14 @@ public class Knife : Item, IUsableItem
         while (t <= 1.0)
         {
             t += Time.deltaTime / anSpeed;
-            transform.position = Vector3.Lerp(transform.position, player.crosshair.transform.position, Mathf.SmoothStep(0f, 1f, t));
+            transform.position = Vector3.Lerp(transform.position, crosshair.transform.position, Mathf.SmoothStep(0f, 1f, t));
             yield return null;
         }
         t = 0f;
         while (t <= 1.0)
         {
             t += Time.deltaTime / anSpeed;
-            transform.position = Vector3.Lerp(transform.position, player.transform.position + defaultPos, Mathf.SmoothStep(0f, 1f, t));
+            transform.position = Vector3.Lerp(transform.position, owner.transform.position + defaultPos, Mathf.SmoothStep(0f, 1f, t));
             yield return null;
         }
         animating = false;

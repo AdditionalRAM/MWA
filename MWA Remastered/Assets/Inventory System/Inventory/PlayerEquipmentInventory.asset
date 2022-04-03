@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3a433a3558a4ff4bb877dff9269b641, type: 3}
   m_Name: PlayerEquipmentInventory
   m_EditorClassIdentifier: 
+  inventoryType: 1
+  emptyID: 0
+  equippedID: 0
   savePath: /savedata/
   fileName: eqinv.sugoma
   container: []

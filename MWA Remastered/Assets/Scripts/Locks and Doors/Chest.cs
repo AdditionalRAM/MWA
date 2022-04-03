@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Chest : MonoBehaviour
+public class Chest : MonoBehaviour, IUseSaveGame
 {
     Animator an;
     UIReferences ui;
@@ -11,6 +11,7 @@ public class Chest : MonoBehaviour
 
     public GameObject itemPrefab;
     public Vector3 itemPosition;
+    public bool loadOnAwake;
 
     public bool locked, playerInRange, open;
 
@@ -18,7 +19,7 @@ public class Chest : MonoBehaviour
     {
         an = GetComponent<Animator>();
         ui = FindObjectOfType<UIReferences>();
-        OnAfterGameLoad();
+        if(loadOnAwake)OnAfterGameLoad();
     }
 
     private void Update()
@@ -57,6 +58,7 @@ public class Chest : MonoBehaviour
 
     public void OnAfterGameLoad()
     {
+        if (chestID == 6) Debug.Log("OnAfterGameLoad");
         open = SaveGame.chestsOpened[chestID];
         an.SetBool("open", open);
     }

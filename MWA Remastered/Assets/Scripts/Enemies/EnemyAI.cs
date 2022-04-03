@@ -13,12 +13,13 @@ public class EnemyAI : MonoBehaviour, IDamage
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
 
-    public float attackCooldown;
+    public float kbCooldown;
 
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
     bool takingKB;
+    public bool canMove = true;
 
     public Animator an;
     public SpriteRenderer sRenderer;
@@ -60,7 +61,7 @@ public class EnemyAI : MonoBehaviour, IDamage
             {
                 DropLoot();
             }
-            GameObject _deathBum =  Instantiate(deathBum, transform.position, transform.rotation);
+            GameObject _deathBum = Instantiate(deathBum, transform.position, transform.rotation);
             _deathBum.GetComponent<ParticleSystem>().startColor = explosionColor;
             _deathBum.GetComponent<AudioSource>().Play();
             Destroy(_deathBum, 1f);
@@ -84,9 +85,15 @@ public class EnemyAI : MonoBehaviour, IDamage
         }
     }
 
+    IEnumerator KBCooldown()
+    {
+        yield return new WaitForSeconds(kbCooldown);
+        takingKB = false;
+    }
+
     public void DoneKB()
     {
-        takingKB = false;
+        StartCoroutine(KBCooldown());
     }
 
     IEnumerator DamageTint()
@@ -115,7 +122,7 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     void UpdatePath()
     {
-        if(seeker.IsDone() && !idle)
+        if(seeker.IsDone() && !idle && target != null)
         seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 
@@ -225,7 +232,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         // Multiply the direction by our desired speed to get a velocity
         Vector3 velocity = dir * speed * speedFactor;
 
-        if (!idle && !takingKB) {
+        if (!idle && !takingKB && canMove) {
             rb.MovePosition(transform.position += velocity * Time.deltaTime);
             Vector3 dirToPlayer = target.position - transform.position;
             if (dirToPlayer != Vector3.zero)

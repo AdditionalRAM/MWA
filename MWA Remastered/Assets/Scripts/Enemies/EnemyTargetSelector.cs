@@ -6,6 +6,8 @@ public class EnemyTargetSelector : MonoBehaviour
 {
     public EnemyAI mama;
     List<Transform> players = new List<Transform>();
+    public bool indicateAnger;
+    public GameObject angerIndicator;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,6 +15,7 @@ public class EnemyTargetSelector : MonoBehaviour
         {
             players.Add(other.transform);
             //Debug.Log(other.gameObject);
+            if (indicateAnger) { angerIndicator.SetActive(true); angerIndicator.GetComponent<AudioSource>().Play(); }
         }
     }
 
@@ -28,6 +31,10 @@ public class EnemyTargetSelector : MonoBehaviour
     {
         if (players.Count > 0)
         {
+            if (indicateAnger)
+            {
+                angerIndicator.SetActive(true);
+            }
             mama.idle = false;
             float nearestDistance = 200f;
             foreach (Transform player in players)
@@ -43,6 +50,7 @@ public class EnemyTargetSelector : MonoBehaviour
         else
         {
             mama.idle = true;
+            if(indicateAnger)angerIndicator.SetActive(false);
         }
     }
 }

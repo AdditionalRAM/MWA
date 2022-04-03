@@ -9,7 +9,7 @@ public class LockedTeleportDoor : NPCDialogue, IUseSaveGame
     bool localized;
     public int doorID;
     public ItemObject key;
-    public ItemObject noRemoveKey;
+    public ItemObject[] noRemoveKey;
     public float sceneTransitionDuration;
     public bool locked = true, keyNoRemove = false;
     public bool enterOnChoice, animate, requireKey, replaceDialog;
@@ -90,7 +90,16 @@ public class LockedTeleportDoor : NPCDialogue, IUseSaveGame
         }
         else
         {
-            if (keyNoRemove && !player.altScript.keyInventory.HasItem(noRemoveKey, 1))
+            bool playerHasKeys = true;
+            foreach (ItemObject iKey in noRemoveKey)
+            {
+                if(!player.altScript.keyInventory.HasItem(iKey, 1))
+                {
+                    playerHasKeys = false;
+                    break;
+                }
+            }
+            if (keyNoRemove && !playerHasKeys)
             {
                 currentlySayingDialogs = forgorDialog;
             }
@@ -98,7 +107,7 @@ public class LockedTeleportDoor : NPCDialogue, IUseSaveGame
             {
                 StartCoroutine(FakeSceneTransition());
             }
-            else if(keyNoRemove && player.altScript.keyInventory.HasItem(noRemoveKey, 1))
+            else if(keyNoRemove && playerHasKeys)
             {
                 StartCoroutine(FakeSceneTransition());
             }

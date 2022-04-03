@@ -11,7 +11,7 @@ public class SaveManager : MonoBehaviour
     public InventoryTabManager invs;
     public string saveFolder, savePath;
 
-    private void Awake()
+    private void Start()
     {
         ui = GetComponent<UIReferences>();
         invs = FindObjectOfType<InventoryTabManager>();
@@ -27,10 +27,42 @@ public class SaveManager : MonoBehaviour
         SaveGame.fuatDialog1 = data.fuatDialog1;
         SaveGame.fuatKeyGiven = data.fuatKeyGiven;
         SaveGame.knifegiverGaveKnife = data.knifegiverGaveKnife;
-        SaveGame.doorsUnlocked = data.doorsUnlocked;
-        SaveGame.chestsOpened = data.chestsOpened;
-        SaveGame.dungeonsComplete = data.dungeonsComplete;
-        SaveGame.bossesKilled = data.bossesKilled;
+        if (SaveGame.doorsUnlocked.Length > data.doorsUnlocked.Length)
+        {
+            Debug.Log("doorsUnlocked alert");
+            for (int i = 0; i < data.doorsUnlocked.Length; i++)
+            {
+                SaveGame.doorsUnlocked[i] = data.doorsUnlocked[i];
+            }
+        }
+        else SaveGame.doorsUnlocked = data.doorsUnlocked;
+        if(SaveGame.chestsOpened.Length > data.chestsOpened.Length)
+        {
+            Debug.Log("chestsOpened alert");
+            for (int i = 0; i < data.chestsOpened.Length; i++)
+            {
+                SaveGame.chestsOpened[i] = data.chestsOpened[i];
+            }
+        }
+        else SaveGame.chestsOpened = data.chestsOpened;
+        if (SaveGame.dungeonsComplete.Length > data.dungeonsComplete.Length)
+        {
+            Debug.Log("dungeonsComplete alert");
+            for (int i = 0; i < data.dungeonsComplete.Length; i++)
+            {
+                SaveGame.dungeonsComplete[i] = data.dungeonsComplete[i];
+            }
+        }
+        else SaveGame.dungeonsComplete = data.dungeonsComplete;
+        if (SaveGame.bossesKilled.Length > data.bossesKilled.Length)
+        {
+            Debug.Log("bossesKilled alert");
+            for (int i = 0; i < data.bossesKilled.Length; i++)
+            {
+                SaveGame.bossesKilled[i] = data.bossesKilled[i];
+            }
+        }
+        else SaveGame.bossesKilled = data.bossesKilled;
     }
 
     public void Save()

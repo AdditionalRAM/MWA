@@ -99,12 +99,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7944c53daee139f4eb2087fe27c54a5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  owner: {fileID: 0}
   rotateOffset: -90
   range: 0.7
   damage: 1
   myItem: {fileID: 11400000, guid: 4410492f311720e4b99aa94db75273d9, type: 2}
   useSound: {fileID: -467010224673141864}
+  autoPlaySound: 1
+  crosshair: {fileID: 0}
   kbTime: 0.2
   kbThrust: 0.7
   defaultPos: {x: -0.1, y: -0.02, z: 0}

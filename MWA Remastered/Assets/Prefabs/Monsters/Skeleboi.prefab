@@ -144,14 +144,15 @@ MonoBehaviour:
   target: {fileID: 0}
   hurtSound: {fileID: 7749792213404187490}
   playHurtSound: 0
-  speed: 4.5
+  speed: 5
   nextWaypointDistance: 1
-  attackCooldown: 0
+  kbCooldown: 0.15
+  canMove: 1
   an: {fileID: 1949748448916364586}
   sRenderer: {fileID: 1949748448916364584}
   idle: 1
   health: 15
-  meleeDamage: 2
+  meleeDamage: 1
   kbTime: 0.2
   kbThrust: 1.2
   damageColor: {r: 1, g: 0, b: 0, a: 1}
@@ -335,7 +336,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

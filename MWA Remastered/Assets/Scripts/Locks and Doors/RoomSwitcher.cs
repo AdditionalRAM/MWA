@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Experimental.Rendering.Universal;
+using DG.Tweening;
 
 public class RoomSwitcher : MonoBehaviour, ILocalization
 {
@@ -17,6 +19,8 @@ public class RoomSwitcher : MonoBehaviour, ILocalization
     public bool cutsceneOnEnter = false, oneTimeChange = false;
     public GameObject[] changeOnEnter;
     public bool cutscenePlayed;
+    public float lightIntensity, lightTweenDuration;
+    public bool lighting;
 
     private void Awake()
     {
@@ -28,6 +32,10 @@ public class RoomSwitcher : MonoBehaviour, ILocalization
         if (other.CompareTag("Player") && !other.isTrigger)
         {
             if (onRoomLoad != null) onRoomLoad.Invoke();
+            if (lighting)
+            {
+                other.GetComponent<PlayerMovement>().SetLighting(lightIntensity, lightTweenDuration);
+            }
             roomCam.SetActive(true);
             if (cutsceneOnEnter) Cutscene();
             if(other.GetComponent<PlayerMovement>().currentPlaceName != placeName)
