@@ -31,10 +31,7 @@ public class EnemyTargetSelector : MonoBehaviour
     {
         if (players.Count > 0)
         {
-            if (indicateAnger)
-            {
-                angerIndicator.SetActive(true);
-            }
+            if (indicateAnger) angerIndicator.SetActive(true);    
             mama.idle = false;
             float nearestDistance = 200f;
             foreach (Transform player in players)

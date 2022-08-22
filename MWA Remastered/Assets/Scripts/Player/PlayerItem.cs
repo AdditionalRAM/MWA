@@ -258,5 +258,6 @@ public class PlayerItem : MonoBehaviour
         consumeInventory.container.Clear();
         equipInventory.container.Clear();
         keyInventory.container.Clear();
+        armorInventory.container.Clear();
     }
 }

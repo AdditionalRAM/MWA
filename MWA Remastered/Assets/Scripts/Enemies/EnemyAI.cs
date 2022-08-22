@@ -24,7 +24,7 @@ public class EnemyAI : MonoBehaviour, IDamage
     public Animator an;
     public SpriteRenderer sRenderer;
     Seeker seeker;
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
 
     public bool idle;
@@ -61,10 +61,7 @@ public class EnemyAI : MonoBehaviour, IDamage
             {
                 DropLoot();
             }
-            GameObject _deathBum = Instantiate(deathBum, transform.position, transform.rotation);
-            _deathBum.GetComponent<ParticleSystem>().startColor = explosionColor;
-            _deathBum.GetComponent<AudioSource>().Play();
-            Destroy(_deathBum, 1f);
+            CreateDeathBum();
             Destroy(gameObject);
         }
         else
@@ -105,7 +102,7 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && other.isTrigger)
+        if (other.GetComponent<IDamage>() != null && other.isTrigger)
         {
             other.GetComponent<IDamage>().Damaged(meleeDamage);
             other.GetComponent<IDamage>().TakeKB(kbTime, kbThrust, transform.position);
@@ -122,8 +119,11 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     void UpdatePath()
     {
-        if(seeker.IsDone() && !idle && target != null)
-        seeker.StartPath(rb.position, target.position, OnPathComplete);
+        if (seeker.IsDone() && !idle && target != null)
+        {
+            seeker.StartPath(rb.position, target.position, OnPathComplete);
+        }
+
     }
 
     /*private void FixedUpdate()
@@ -254,6 +254,10 @@ public class EnemyAI : MonoBehaviour, IDamage
             path = p;
             currentWaypoint = 0;
         }
+        else
+        {
+            Debug.Log(p.errorLog);
+        }
     }
 
     public void DropLoot()
@@ -284,5 +288,13 @@ public class EnemyAI : MonoBehaviour, IDamage
                 }
             }
         }
+    }
+
+    public void CreateDeathBum()
+    {
+        GameObject _deathBum = Instantiate(deathBum, transform.position, transform.rotation);
+        _deathBum.GetComponent<ParticleSystem>().startColor = explosionColor;
+        _deathBum.GetComponent<AudioSource>().Play();
+        Destroy(_deathBum, 1f);
     }
 }

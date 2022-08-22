@@ -39,6 +39,7 @@ public class Bow : Item, IUsableItem, IOnRotateItem
         if (!CanUse()) return;
         GameObject _arrowBullet = Instantiate(bulletArrow, displayArrow.transform.position, displayArrow.transform.rotation);
         _arrowBullet.GetComponent<Arrow>().owner = owner;
+        if (damage > 0) _arrowBullet.GetComponent<Arrow>().damage = damage;
         useSound.Play();
         if (requireItem) inv.RemoveItem(arrowItem, 1);
     }

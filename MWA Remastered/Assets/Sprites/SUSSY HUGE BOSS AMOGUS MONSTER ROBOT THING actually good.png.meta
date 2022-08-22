@@ -69,6 +69,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -661,6 +662,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      hugebot_armstart: -4597253137548802172
+      hugebot_hand: 4998053809565517817
+      hugebot_legstart: -3558011080760385437
+      amog bot leg: 4814357458913690052
+      hugebot_armcn0: -6680565540486977864
+      hugebot_beforehand: -8601663117427222466
+      minibot_walk0: 6051932133274345029
+      hugebot_armcn1: 1128483728189773893
+      hugebot_arm: -5690606732082667740
+      minibot_walk1: 8731761348067379855
+      minibot_idle0: -6365854992305280672
+      hugebot_onepiece: -3866468850769772868
+      minibot_walk3: -8016366500491594729
+      minibot_idle2: 7118352900782072850
+      hugebot_leg0: 3229995501542319912
+      minibot_walk2: -8258004273705186230
+      hugebot_head: 964545496756495740
+      hugebot_torso: -486853391777431409
+      amog bot arm: 6887994908953290059
+      minibot_walk6: -202363298857084401
+      minibot_walk5: 4266421185443343099
+      hugebot_leg1: -2917762823816531424
+      minibot_walk4: -4134692628777047176
+      hugebot_foot: -6951821262743651803
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

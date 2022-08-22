@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -304,6 +305,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      darock_3: -426516828943635132
+      darock_1: -4413968296016409524
+      darock_4: -7380324354403554180
+      darock_6: -3123469128866190226
+      darock_2: 7264564777218292396
+      darock_7: 1516531861479713852
+      darock_0: 6423977211888835639
+      darock_5: 5644447985046919952
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

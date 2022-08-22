@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -592,6 +593,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      king2crownlesswalk0: 9005889210629420810
+      king2crownlesswalk2: 1290234740440138006
+      king1crownwalk1: -1515648322963766761
+      king2crownlesswalk1: -9159010794392328278
+      king2crownwalk2: 3181720643874866897
+      royalknight_walk2: 618876104800421073
+      king1crownlesswalk0: -322082243421965541
+      royalknight_walk0: 5452198621989172989
+      royalknight_walk3: -8982306676121723761
+      royalknight_walk1: -8471686370045779711
+      king1crownwalk2: -4684065897584063898
+      royalknight_walk4: -4576896807336023932
+      royalknight_walk6: 7270787475414295585
+      royalknight_walk7: 3099469151667000598
+      king2crownwalk0: -6074828590934596299
+      king2crownwalk1: -9123481193869311120
+      royalknight_idle0: 6980951600498048890
+      king1crownlesswalk1: -7923333630033298316
+      king1crownlesswalk2: -5875253705116058334
+      king1crownwalk0: -3090531027912677048
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

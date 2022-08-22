@@ -32,8 +32,6 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
     {        
         if (!HasItem(_item, 1))
         {
-            Debug.Log(_item);
-            Debug.Log(database.GetItem[26]);
             container.Add(new InventorySlot(database.GetId[_item], _item, _amount));
         }
         else
@@ -78,6 +76,12 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 
     public void OnAfterDeserialize()
     {
+        
+    }
+
+    public void SussyDeserialize()
+    {
+        database.DictionaryInit();
         for (int i = 0; i < container.Count; i++)
         {
             ItemObject sussy;
@@ -128,7 +132,7 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
                 invenDisplay.Rerender(); 
                 if(inventoryType == ItemType.Equipment)
                 {
-                    if(equippedID != 0 && database.GetItem[equippedID].type == ItemType.Equipment)
+                    if(equippedID != database.GetId[database.emptyEquipment] && database.GetItem[equippedID].type == ItemType.Equipment)
                     {
                         invenDisplay.Equip(database.GetItem[equippedID].equipItem);
                     }
@@ -139,7 +143,7 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
                 }
                 if (inventoryType == ItemType.Armor)
                 {
-                    if (equippedID != 0 && database.GetItem[equippedID].type == ItemType.Armor)
+                    if (equippedID != database.GetId[database.emptyArmor] && database.GetItem[equippedID].type == ItemType.Armor)
                     {
                         invenDisplay.EquipArmor(database.GetItem[equippedID].armorItem);
                     }
@@ -155,10 +159,12 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
             if (inventoryType == ItemType.Armor && !HasItem(database.emptyArmor, 1))
             {
                 AddItem(database.emptyArmor, 1);
+                invenDisplay.EquipArmor(database.emptyArmor);
             }
             else if (inventoryType == ItemType.Equipment && !HasItem(database.emptyEquipment, 1))
             {
                 AddItem(database.emptyEquipment, 1);
+                invenDisplay.Equip(database.emptyEquipment);
             }
         }
     }

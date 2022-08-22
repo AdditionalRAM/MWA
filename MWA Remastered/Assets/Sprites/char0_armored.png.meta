@@ -144,6 +144,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1072,6 +1073,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      char0_armored_23: 3130460344847337051
+      char0_armored_21: -1329054001925546913
+      char0_armored_28: 4814209486864708068
+      char0_armored_12: 3341432929568227981
+      char0_armored_7: 3652225020502645421
+      char0_armored_33: 5702908889132884910
+      char0_armored_6: -5929647584202135934
+      char0_armored_0: 5438107762422625202
+      char0_armored_3: -693913139121589473
+      char0_armored_30: 1985402482571427220
+      char0_armored_16: -3081121419372297316
+      char0_armored_2: -6695653358551060539
+      char0_armored_25: 2367113493420757720
+      char0_armored_38: -6597806534088591098
+      char0_armored_29: -7015084714992804176
+      char0_armored_11: 6743283687370923470
+      char0_armored_9: -4160210687726557375
+      char0_armored_35: -5240904051751623147
+      char0_armored_4: -1236706878152077485
+      char0_armored_37: 1094395528241033242
+      char0_armored_39: -3754319679355693801
+      char0_armored_26: 3270932904187998432
+      char0_armored_15: -1768149279828069532
+      char0_armored_18: 7556857258792422351
+      char0_armored_1: 7887640059925364986
+      char0_armored_19: 6680517308673146603
+      char0_armored_5: -8140966232434571964
+      char0_armored_17: -5428419790027486573
+      char0_armored_22: 7027915705447584243
+      char0_armored_31: -4339138352464160457
+      char0_armored_13: 7335049622615765413
+      char0_armored_8: -4245762357016411611
+      char0_armored_14: 4183315770788028917
+      char0_armored_27: -1510287589231118902
+      char0_armored_10: 2404669346437225450
+      char0_armored_32: -6277459236192829571
+      char0_armored_36: -5239874076132048424
+      char0_armored_20: 6559919069609940890
+      char0_armored_24: 3712130333049469593
+      char0_armored_34: -505950249940967787
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

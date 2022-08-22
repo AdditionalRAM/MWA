@@ -15,6 +15,7 @@ MonoBehaviour:
   defItem: {fileID: 11400000}
   consumableItem: {fileID: 0}
   equipItem: {fileID: 0}
+  armorItem: {fileID: 0}
   keyItem: {fileID: 0}
   prefab: {fileID: 282915643220335936, guid: 591f954283c938648bcc4f2e7660c230, type: 3}
   type: 0

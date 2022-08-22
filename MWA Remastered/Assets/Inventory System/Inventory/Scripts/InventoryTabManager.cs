@@ -11,6 +11,15 @@ public class InventoryTabManager : MonoBehaviour
     public GameObject currentInfoTab;
     public GameObject[] itemMenus;
     public Button[] menuButtons;
+    public InventoryObject[] inventories;
+
+    private void Awake()
+    {
+        foreach (InventoryObject hiyar in inventories)
+        {
+            hiyar.SussyDeserialize();
+        }
+    }
 
     private void Start()
     {

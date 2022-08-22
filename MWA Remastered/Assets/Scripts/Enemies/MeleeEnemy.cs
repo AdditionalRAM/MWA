@@ -83,6 +83,7 @@ public class MeleeEnemy : EnemyAI
     {
         attacking = true;
         canMove = false;
+        rb.velocity = Vector3.zero;
         yield return new WaitForSeconds(attackDelay);
         UseWeapon();
         yield return new WaitForSeconds(attackCooldown);

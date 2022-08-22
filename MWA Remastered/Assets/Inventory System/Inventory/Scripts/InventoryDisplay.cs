@@ -15,7 +15,7 @@ public class InventoryDisplay : MonoBehaviour
     public int columnCount;
     Dictionary<InventorySlot, GameObject> itemsDisplayed = new Dictionary<InventorySlot, GameObject>();
 
-    private void Awake()
+    private void Start()
     {
         myTabs = transform.parent.GetComponent<InventoryTabManager>();
         Rerender();

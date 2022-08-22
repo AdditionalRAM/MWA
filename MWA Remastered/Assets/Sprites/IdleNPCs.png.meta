@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -496,6 +497,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      man1_1: -7297041825915286839
+      youngman1_0: 9128946630002530100
+      man2_0: -622606819924997537
+      oldman0: 4570326699500426374
+      oldwoman_0: -6547377416679044779
+      woman2_0: -9066052523511537785
+      woman1_1: -840148708588255864
+      man1_0: 5329799941017784404
+      oldwoman_1: 3073636933127055845
+      youngman2_1: -1563728514272108516
+      oldman1: -3568586053388230410
+      woman2_1: 2147185839770201455
+      woman1_0: -3071800160335665972
+      youngman2_0: 7804513500755202704
+      man2_1: 2358559861594943257
+      youngman1_1: 8887007411183432907
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -151,10 +151,10 @@ public class NPCDialogue : MonoBehaviour, ILocalization
     {
         if(other.CompareTag("Player") && other.isTrigger && !inDialog)
         {
-            if (controlledFromOutside && onPlayerEnterRange != null) onPlayerEnterRange.Invoke();
             canInteract = true;
             ui.interactButton.gameObject.SetActive(true);
             player = other.GetComponent<PlayerMovement>();
+            if (controlledFromOutside && onPlayerEnterRange != null) onPlayerEnterRange.Invoke();
         }
     }
 
@@ -225,5 +225,17 @@ public class NPCDialogue : MonoBehaviour, ILocalization
 
         currentlySayingDialogs = dialogs;
         if (controlledFromOutside && onLocalize != null) onLocalize.Invoke();
+    }
+
+    public void ReDialog()
+    {
+        Invoke("DialogInteract", 0.01f);
+    }
+
+    public void FreezePlayerThenDip()
+    {
+        if(player != null)
+        player.freeze = true;
+        Destroy(gameObject);
     }
 }

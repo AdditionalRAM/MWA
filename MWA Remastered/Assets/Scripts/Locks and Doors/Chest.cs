@@ -58,7 +58,6 @@ public class Chest : MonoBehaviour, IUseSaveGame
 
     public void OnAfterGameLoad()
     {
-        if (chestID == 6) Debug.Log("OnAfterGameLoad");
         open = SaveGame.chestsOpened[chestID];
         an.SetBool("open", open);
     }

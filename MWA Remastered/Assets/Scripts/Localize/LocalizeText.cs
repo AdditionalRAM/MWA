@@ -21,6 +21,6 @@ public class LocalizeText : MonoBehaviour, ILocalization
         {
             myText.text = LocalManager.Localize(textID);
         }
-        else if (myText == null) Debug.Log("myText is null!");
+        //else if (myText == null) Debug.Log("myText is null!");
     }
 }

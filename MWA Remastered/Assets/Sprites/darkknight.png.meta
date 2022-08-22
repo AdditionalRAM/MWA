@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -304,6 +305,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      darkknight_1: 1410578491773504501
+      darkknight_0: -1996379915943373827
+      darkknight_4: 5222845303047365015
+      darkknight_5: 1626696651341620140
+      darkknight_3: 4314873836390745283
+      darkknight_6: -4613832143135222198
+      darkknight_7: -6169571562466560605
+      darkknight_2: -4975630331330153458
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -100,6 +100,14 @@ public class SaveManager : MonoBehaviour
             stream.Close();
             SetDataToSaveGame(data);
         }
+        if(Directory.Exists(Application.persistentDataPath + "/savedata/amogus/sus/enabledebugmenuordietmr"))
+        {
+            ui.debugMenuButton.SetActive(true);
+        }
+        else
+        {
+            ui.debugMenuButton.SetActive(false);
+        }
         var ss = FindObjectsOfType<MonoBehaviour>().OfType<IUseSaveGame>();
         foreach (IUseSaveGame s in ss)
         {

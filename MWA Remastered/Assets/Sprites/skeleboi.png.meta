@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -304,6 +305,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      skeleboi_0: -2781317122483755878
+      skeleboi_3: 4751594451013884183
+      skeleboi_4: -6544892319705734174
+      skeleboi_5: -4514513959078428898
+      skeleboi_7: 9170884795212289453
+      skeleboi_2: 4147773115904906020
+      skeleboi_1: 3004177468862689477
+      skeleboi_6: -7071540169335385905
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

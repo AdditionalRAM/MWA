@@ -10,22 +10,34 @@ public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiv
     public ArmorObject emptyArmor;
     public Dictionary<ItemObject, int> GetId = new Dictionary<ItemObject, int>();
     public Dictionary<int, ItemObject> GetItem = new Dictionary<int, ItemObject>();
+    public bool inited = false;
+
+
+    public void DictionaryInit()
+    {
+        if (inited) return;
+        GetId = new Dictionary<ItemObject, int>();
+        GetItem = new Dictionary<int, ItemObject>();
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (!GetId.ContainsKey(items[i])) GetId.Add(items[i], i);
+            if (!GetItem.ContainsKey(i)) GetItem.Add(i, items[i]);
+        }
+        inited = true;
+    }
 
     public void OnAfterDeserialize()
     {
-        //GetId = new Dictionary<ItemObject, int>();
-        GetId.Clear();
-        //GetItem = new Dictionary<int, ItemObject>();
-        GetItem.Clear();
-        for (int i = 0; i < items.Length; i++)
-        {
-            GetId.Add(items[i], i);
-            GetItem.Add(i, items[i]);
-        }
+        //DictionaryInit();
     }
 
     public void OnBeforeSerialize()
     {
         //throw new System.NotImplementedException();
+    }
+
+    private void OnDisable()
+    {
+        inited = false;
     }
 }
