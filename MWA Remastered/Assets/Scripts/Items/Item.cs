@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Item : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class Item : MonoBehaviour
     public enum ItemType{MeleeWeapon, RangedWeapon, Tool};
 
     public ItemType itemType;
+
+    public UnityEvent onFinishAttack;
 
 
     public void Use()

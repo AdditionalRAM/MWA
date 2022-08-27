@@ -91,8 +91,8 @@ public class BigWhiteKnightCutscene : EnemyAI
         transform.localScale = Vector3.zero;
         CreateDeathBum();
         yield return new WaitForSeconds(0.7f);
-        transform.position = brother.transform.position;
-        CreateDeathBum();
+        //transform.position = brother.transform.position;
+        //CreateDeathBum();
         brother.SetActive(true);
         Destroy(gameObject);
     }

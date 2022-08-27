@@ -27,11 +27,7 @@ public class BreakableObject : MonoBehaviour, ISelectiveDamage
         if (animate) AnimateBreaking();
         if(health <= 0)
         {
-            GameObject _deathBum = Instantiate(breakBum, transform.position, transform.rotation);
-            _deathBum.GetComponent<ParticleSystem>().startColor = breakColor;
-            _deathBum.GetComponent<AudioSource>().Play();
-            Destroy(_deathBum, 1f);
-            Destroy(gameObject);
+            CommitDie();
         }
     }
 
@@ -47,5 +43,14 @@ public class BreakableObject : MonoBehaviour, ISelectiveDamage
         else if (health > (maxHealth / 2)) return 2;
         else if (health <= (maxHealth / 2)) return 3;
         return 0;
+    }
+
+    public void CommitDie()
+    {
+        GameObject _deathBum = Instantiate(breakBum, transform.position, transform.rotation);
+        _deathBum.GetComponent<ParticleSystem>().startColor = breakColor;
+        _deathBum.GetComponent<AudioSource>().Play();
+        Destroy(_deathBum, 1f);
+        Destroy(gameObject);
     }
 }

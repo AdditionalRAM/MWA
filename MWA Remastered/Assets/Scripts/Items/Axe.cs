@@ -31,5 +31,6 @@ public class Axe : Item, IUsableItem
         canAttack = false;
         yield return new WaitForSeconds(cooldownDuration);
         animating = false;
+        if (onFinishAttack != null) onFinishAttack.Invoke();
     }
 }

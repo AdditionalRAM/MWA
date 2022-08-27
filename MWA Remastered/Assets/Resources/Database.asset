@@ -35,12 +35,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6f2ff6a2cb314074691267a3f30e13ad, type: 2}
   - {fileID: 11400000, guid: ee34aadc5d63ee6479dfd478a95c95cc, type: 2}
   - {fileID: 11400000, guid: 8c0efdfcf5d81e14780769eab351a1f9, type: 2}
-  - {fileID: 11400000, guid: a473621a54ce76740a84717f7f1a8b7e, type: 2}
-  - {fileID: 11400000, guid: a84da2a7cafd7ba4b9ee347570592b75, type: 2}
   - {fileID: 11400000, guid: 3c01169bcd291c441909cb9d21389bba, type: 2}
   - {fileID: 11400000, guid: ff920b74f58acaa46bcf77d0b79ed935, type: 2}
   - {fileID: 11400000, guid: f49e6d063c506e94d8015a5898e4f309, type: 2}
   - {fileID: 11400000, guid: 419431b6f5292a14091755d9110adb70, type: 2}
+  - {fileID: 11400000, guid: a473621a54ce76740a84717f7f1a8b7e, type: 2}
+  - {fileID: 11400000, guid: a84da2a7cafd7ba4b9ee347570592b75, type: 2}
   emptyEquipment: {fileID: 11400000, guid: a473621a54ce76740a84717f7f1a8b7e, type: 2}
   emptyArmor: {fileID: 11400000, guid: a84da2a7cafd7ba4b9ee347570592b75, type: 2}
   inited: 1
