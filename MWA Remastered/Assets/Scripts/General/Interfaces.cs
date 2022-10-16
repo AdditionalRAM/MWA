@@ -37,3 +37,9 @@ public interface ILocalization
 {
     void OnLocalize();
 }
+
+public interface IOnPlayerGetItem
+{
+    void OnPlayerGetItem(ItemObject item, int itemCount);
+}
+

@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class PlayerItem : MonoBehaviour
 {
     public PlayerMovement altScript;
-    public AudioSource pickupSound;
+    public AudioSource pickupSound, healSound;
 
     public Joystick aimStick;
     public Vector3 aimInput;
@@ -21,6 +22,12 @@ public class PlayerItem : MonoBehaviour
     public GameObject acquirePrefab;
     public Transform canvas;
     GameObject currentAc;
+
+    public ItemObject healthPot;
+    public bool quickHealUsable;
+    public int quickHealCooldown;
+
+    public float quickHealTimer;
 
     private void Awake()
     {
@@ -43,6 +50,54 @@ public class PlayerItem : MonoBehaviour
             }
             selectedItem.owner = gameObject;
             selectedItem.crosshair = crosshair.transform;
+        }
+        if(!quickHealUsable) UpdateQuickHealTimer();
+        if (consumeInventory.HasItem(healthPot, 1))
+        {
+            UIReferences.instance.quickHealButton.SetActive(true);
+            if (quickHealUsable)
+            {
+                UIReferences.instance.quickHealButton.GetComponent<Button>().interactable = true;
+                UIReferences.instance.quickHealCountdown.gameObject.SetActive(false);
+                UIReferences.instance.quickHealImage.gameObject.SetActive(true);
+                UIReferences.instance.quickHealItemCount.text = 
+                    consumeInventory.CountItem(healthPot).ToString();
+            }
+            else
+            {
+                UIReferences.instance.quickHealCountdown.gameObject.SetActive(true);
+                UIReferences.instance.quickHealImage.gameObject.SetActive(false);
+                UIReferences.instance.quickHealButton.GetComponent<Button>().interactable = false;             
+            }
+        }
+        else
+        {
+            UIReferences.instance.quickHealButton.SetActive(false);
+        }
+    }
+
+    public void UpdateQuickHealTimer()
+    {
+        if(quickHealTimer > 0)
+        {
+            quickHealTimer -= Time.deltaTime;
+        }
+        else
+        {
+            quickHealUsable = true;
+            quickHealTimer = quickHealCooldown;
+        }
+        UIReferences.instance.quickHealCountdown.text = ((int)quickHealTimer).ToString();
+    }
+
+    public void UseQuickHeal()
+    {
+        if (quickHealUsable && consumeInventory.HasItem(healthPot, 1) && Healable())
+        {
+            Heal(healthPot.consumableItem.restoredHealth);
+            consumeInventory.RemoveItem(healthPot, 1);
+            healSound.Play();
+            quickHealUsable = false;
         }
     }
 
@@ -116,7 +171,7 @@ public class PlayerItem : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.GetComponent<DroppedItem>() != null)
+        /*if (other.gameObject.GetComponent<DroppedItem>() != null)
         {
             DroppedItem item = other.gameObject.GetComponent<DroppedItem>();
             if (!other.collider.isTrigger && !other.otherCollider.isTrigger && !item.obtained)
@@ -162,9 +217,44 @@ public class PlayerItem : MonoBehaviour
                 {
                     if (keyInventory.container.Count < keyInventory.limit) keyInventory.AddItem(item.item, item.itemAmount);
                     else return;
-                }*/
+                }
                 Destroy(item.gameObject);
             }
+        }*/
+        if(other.gameObject.GetComponent<IDamage>() != null)
+        {
+            other.gameObject.GetComponent<IDamage>().TakeKB(.2f, 1.2f, transform.position);
+        }
+    }
+
+    public void GrabItem(ItemObject item, int itemAmount, string itemName)
+    {
+        if (item.type == ItemType.Default)
+        {
+            defInventory.AddItem(item, itemAmount);
+        }
+        else if (item.type == ItemType.Consumable)
+        {
+            consumeInventory.AddItem(item, itemAmount);
+        }
+        else if (item.type == ItemType.Equipment)
+        {
+            equipInventory.AddItem(item, itemAmount);
+        }
+        else if (item.type == ItemType.Key)
+        {
+            keyInventory.AddItem(item, itemAmount);
+        }
+        else if (item.type == ItemType.Armor)
+        {
+            armorInventory.AddItem(item, itemAmount);
+        }
+        pickupSound.Play();
+        StartCoroutine(AnimateAcquiring(item, itemAmount, itemName));
+        var ss = FindObjectsOfType<MonoBehaviour>().OfType<IOnPlayerGetItem>();
+        foreach (IOnPlayerGetItem s in ss)
+        {
+            s.OnPlayerGetItem(item, itemAmount);
         }
     }
 

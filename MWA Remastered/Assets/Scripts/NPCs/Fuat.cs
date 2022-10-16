@@ -44,6 +44,7 @@ public class Fuat : NPCDialogue, IUseSaveGame
     {
         if (saidDialog1)
         {
+            QuestHolder.instance.questSHim.SpokeToFuat();
             canOption = false; optionChoice = false;
             if (heartsTaken && !keyGiven)
             {
@@ -71,20 +72,20 @@ public class Fuat : NPCDialogue, IUseSaveGame
     {
         CheckHearts();
         CheckVars();
-        
     }
 
     public void OnOption2End()
     {
         canOption = false; optionChoice = false;
         saidDialog1 = true;
+        QuestHolder.instance.questSHim.SpokeToFuat();
         SetVarsToSaveGame();
     }
     public void OnDialogEnd()
     {
         if (currentlySayingDialogs == yesHearts)
         {
-            Instantiate(keyPrefab, keyPosition, Quaternion.identity);
+            Instantiate(keyPrefab, player.transform.position, Quaternion.identity);
             keyGiven = true;
             SetVarsToSaveGame();
         }

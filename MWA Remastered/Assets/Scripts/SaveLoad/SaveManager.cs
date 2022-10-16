@@ -63,6 +63,7 @@ public class SaveManager : MonoBehaviour
             }
         }
         else SaveGame.bossesKilled = data.bossesKilled;
+        SaveGame.questProgresses = data.questProgresses;
     }
 
     public void Save()

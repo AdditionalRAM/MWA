@@ -20,7 +20,7 @@ public class KnifeGiver : NPCDialogue, IUseSaveGame
     {
         canOption = false; optionChoice = false;
         currentlySayingDialogs = afterKnife;
-        Instantiate(knifePrefab, knifePos, Quaternion.identity);
+        Instantiate(knifePrefab, player.transform.position, Quaternion.identity);
         knifeGiven = true;
         SaveGame.knifegiverGaveKnife = knifeGiven;
     }

@@ -26,6 +26,7 @@ public class Localizer : MonoBehaviour
             StartLangMenu(false);
         }
         else GetReadyToLocalize(currentLang, false);
+        Application.targetFrameRate = Screen.resolutions[0].refreshRate*2;
     }
 
     public void StartLangMenu(bool wBackButton)

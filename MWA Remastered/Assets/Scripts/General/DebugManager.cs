@@ -13,6 +13,11 @@ public class DebugManager : MonoBehaviour
     public string[] debugCommands;
     public Vector3 oldPos;
 
+    int m_frameCounter = 0;
+    float m_timeCounter = 0.0f;
+    float m_lastFramerate = 0.0f;
+    public float m_refreshTime = 0.5f;
+
     private void Awake()
     {
         instance = this;
@@ -56,12 +61,42 @@ public class DebugManager : MonoBehaviour
                 FindObjectOfType<PlayerMovement>().transform.position = newPos;
                 outOut = "Teleported player to " + newPos.ToString();
                 break;
+            case "setmaxfps":
+                Application.targetFrameRate = 
+                int.Parse(debugCommands[1]);
+                break;
+            case "toggleplayercollider":
+                foreach (BoxCollider2D collider in FindObjectOfType<PlayerMovement>().GetComponents<BoxCollider2D>())
+                {
+                    if (!collider.isTrigger) collider.enabled = !collider.enabled;
+                }
+                break;
             default:
                 outOut = "Invalid command " + debugCommands[0];
                 break;
         }
         DebugOut(outOut);
     }
+
+    private void Update()
+    {
+        UIReferences.instance.fpsLimit.text = "LIMIT : " + Application.targetFrameRate;
+        if (m_timeCounter < m_refreshTime)
+        {
+            m_timeCounter += Time.deltaTime;
+            m_frameCounter++;
+        }
+        else
+        {
+            //This code will break if you set your m_refreshTime to 0, which makes no sense.
+            m_lastFramerate = (float)m_frameCounter / m_timeCounter;
+            m_frameCounter = 0;
+            m_timeCounter = 0.0f;
+        }
+        UIReferences.instance.fps.text = "FPS : " + (int)m_lastFramerate;
+        //(int)(Time.frameCount / Time.time);
+    }
+
 
     public void ClearConsole()
     {

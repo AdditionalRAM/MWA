@@ -16,6 +16,8 @@ public class LockedTeleportDoor : NPCDialogue, IUseSaveGame
     public Vector3 teleportPosition;
     public string[] lockedDialog, goThroughDialog, forgorDialog;
 
+    public UnityEvent onUnlock, onEnter;
+
     public void SussyLocalize()
     {
         if (localized) return;
@@ -77,11 +79,13 @@ public class LockedTeleportDoor : NPCDialogue, IUseSaveGame
                 locked = false;   
                 SetVarsToSaveGame();
                 CheckLock();
+                if (onUnlock != null) onUnlock.Invoke();
             }else if (!requireKey)
             {
                 locked = false;
                 SetVarsToSaveGame();
                 CheckLock();
+                if (onUnlock != null) onUnlock.Invoke();
             }
             else
             {
@@ -129,6 +133,7 @@ public class LockedTeleportDoor : NPCDialogue, IUseSaveGame
     void DisableTransitionBlocker()
     {
         ui.transitionBlocker.SetActive(false);
+        if (onEnter != null) onEnter.Invoke();
     }
 }
 

@@ -3,11 +3,11 @@ Standart
 Lebensmittel
 Ausrüstung
 Schlüssel
-Wird geladen
+Laden
 Schaden : 
 Rückstoß : 
 Heilung : 
-Bereich : 
+Reichweite : 
 Speicherpunkt
 Speichern (Halten)
 Löschen (Halten)
@@ -51,7 +51,7 @@ ACHTUNG : EINWEGTÜR
 VERLASSEN IST VERBOTEN
 DIEJENIGEN, DIE VERLASSEN, WERDEN VIELLEICHT NIE ZURÜCKKOMMEN
 Wie es aussieht, ist die Tür verschlossen.
-Artikel Wurde Erworben
+Item Besorgt
 Ausrüsten
 Essen
 Trinken
@@ -248,83 +248,83 @@ Ende der Demo - danke sehr fürs Spielen!
 Folge den Büschen, um in den Debug-Raum zu gehen!
 Wenn Du etwas zu sagen über das Spiel, oder einen Fehler gefunden hast, bitte sag auf itch.io!
 Danke sehr.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Dieser Ort ist in Arbeit und auf dieser Version des Demos nicht verfügbar.
+Rüstung
+Kettenrüstung
+Stahlrüstung
+Tropfene Sonnenbrille
+Leer
+Pfeil
+Axt
+Bogen
+Speer
+MCoin
+Roboterarm
+Roboterbein
+Roboterkopf
+Dunkler Wald
+Dunkles Dorf
+Dunkle Burg
+Du kannst nicht mehr zurückgehen.
+Der Wächter sieht böse aus. Es ist besser, wenn man nicht gesehen wird.
+Ah, noch einer von Kologrent. 
+Warum denken die überhaupt, dass die ihn retten können?
+Denken die, dass er denen was Gutes tun wird?
+Genau das ist warum wir diesen Ort mit unseren Leben wächten.
+Du wirst uns töten müssen, bevor du weitergehen kannst!
+o h , d a s  w i r d  n i c h t  d e r  f a l l  s e i n .
+Hallo. Ich hoffe meine Männer haben dich nicht verletzt.
+Die können manchmal zu aggressiv werden. 
+Komm mal, lass uns eine Tasse Tee trinken.
+Keine Sorge, ich mache dir nichts.
+Komm schon, worauf wartest du?
+"Fancy a cup o' tea, mate?"
+Wie die Engländer es sagen.
+Nimm doch Platz auf der anderen Seite des Tisches. Du musst nicht schüchtern sein!
+Endlich können wir Tee trinken.
+Mmmm, schmeckt. Warmer Tee ist immer schön.
+Ich frage mich, was dich hierher führt.
+Es ist selten, junge Leute wie du hier zu sehen.
+Hast du was zu sagen?
+Riesiger Ritter
+Wer bist du?
+Was sind diese Käfige?
+Ich? Haha. Ich bin der Beschützer dieses Schlosses.
+Es gibt dieses eine.... Ding, das ich beschütze.
+Ich muss es mit meinem Leben beschützen...
+....................
+........
+......... ich weiß warum du hier bist.
+du willst ihn retten oder?
+ich verstehe nicht....
+warum???...
+du musst bezahlen...
+mit deinem leben.
+NullReferenceException : Object reference not set to an instance of an object
+BigWhiteBoss.NPCDialogue.DialogInteract()
+(at Assets/Scripts/NPCs/NPCDialogue.cs:76)
+Du solltest vielleicht die Truhe öffnen.
+Die Truhe ist jetzt leer.
+kliner riter
+haha verarscht
+Es gibt keinen Grund zurückzugehen.
+Wegen dem Gebüsch kann man hier nicht durchgehen. Vielleicht könnte man die mit einem Axt zerstören?
+Beleuchtung an- und ausschalten. Es wird empfohlen, es eingeschaltet zu lassen, es sei denn, es gäbe Leistungsprobleme.
+Schild Trefferpunkte : 
+Aufgaben
+Neue Aufgabe
+Aufgabe Erledigt
+Aufgabe Aktualisiert
+Mit der alten Frau sprechen
+Ein alter Mann meinte, dass du mit seiner Frau sprechen solltest. Sie habe eine Geschichte zu erzählen.
+Die alte Frau hat dich darum gebeten, ihr drei Margariten zu bringen, damit sie Tee machen kann. Nimm die und sprich mit ihr.
+Ihn Retten
+Die alte Frau meinte, dass ihr Sohn versucht hat, ihn zu retten. Er könnte was Hilfreiches wissen.
+Fuat braucht fünf Herze des Monsters für seinen Laden. Dafür brauchst du eine Waffe.
+Mit dem Messer kannst du die Herze des Monsters sammeln. Es gibt viele Monster im Labyrinthwald.
+Fuat hat dir den Schlüssel zu seinem Keller gegeben. Da könnte was Hilfreiches sein.
+Der Schlüssel, den du brauchst, um Kologrent zu verlassen, muss in der Höhle sein.
+Mit dem Schlüssel kannst du endlich Kologrent verlassen.
 
 
 

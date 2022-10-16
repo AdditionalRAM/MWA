@@ -21,6 +21,8 @@ public class RoomSwitcher : MonoBehaviour, ILocalization
     public bool cutscenePlayed;
     public float lightIntensity, lightTweenDuration;
     public bool lighting;
+    public int minimapRoomID = -1;
+    public bool playerInside = false;
 
     private void Awake()
     {
@@ -31,6 +33,7 @@ public class RoomSwitcher : MonoBehaviour, ILocalization
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
+            playerInside = true;
             if (onRoomLoad != null) onRoomLoad.Invoke();
             if (lighting)
             {
@@ -38,23 +41,31 @@ public class RoomSwitcher : MonoBehaviour, ILocalization
             }
             roomCam.SetActive(true);
             if (cutsceneOnEnter) Cutscene();
-            if(other.GetComponent<PlayerMovement>().currentPlaceName != placeName)
+            other.GetComponent<PlayerMovement>().currentRoomID = minimapRoomID;
+            if (other.GetComponent<PlayerMovement>().currentPlaceName != placeName)
             {
                 StartCoroutine(PlaceName(other.GetComponent<PlayerMovement>()));
             }
             if (other.GetComponent<PlayerMovement>().currentBGMusic != myMusic && myMusic != null)
             {
                 other.GetComponent<PlayerMovement>().currentBGMusic = myMusic;
-                ui.bgMusicSource.Stop();
-                ui.bgMusicSource.clip = myMusic;
-                ui.bgMusicSource.Play();
+                UpdateMusic();
             }
         }
     }
+
+    public void UpdateMusic()
+    {
+        ui.bgMusicSource.Stop();
+        ui.bgMusicSource.clip = myMusic;
+        ui.bgMusicSource.Play();
+    }
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
+            playerInside = false;
             if (onRoomExit != null) onRoomExit.Invoke();
             roomCam.SetActive(false);
         }
@@ -64,9 +75,10 @@ public class RoomSwitcher : MonoBehaviour, ILocalization
     {
         player.currentPlaceName = placeName;
         player.placeText.text = placeName;
-        player.placeText.gameObject.SetActive(true);
+        yield return null;
+        /*player.placeText.gameObject.SetActive(true);
         yield return new WaitForSeconds(2f);
-        player.placeText.gameObject.SetActive(false);
+        player.placeText.gameObject.SetActive(false);*/
     }
 
     public void Cutscene()

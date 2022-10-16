@@ -43,4 +43,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a84da2a7cafd7ba4b9ee347570592b75, type: 2}
   emptyEquipment: {fileID: 11400000, guid: a473621a54ce76740a84717f7f1a8b7e, type: 2}
   emptyArmor: {fileID: 11400000, guid: a84da2a7cafd7ba4b9ee347570592b75, type: 2}
+  emptyEquipmentID: 26
+  emptyArmorID: 27
   inited: 1

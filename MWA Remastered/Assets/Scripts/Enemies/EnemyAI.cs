@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Pathfinding;
 using DG.Tweening;
 
@@ -40,6 +41,8 @@ public class EnemyAI : MonoBehaviour, IDamage
     public Dictionary<GameObject, int> lootAndAmounts = new Dictionary<GameObject, int>();
     public Vector3 lootRangeTop, lootRangeBottom;
 
+    public UnityEvent onDeath;
+
     private void Awake()
     {
         if (playHurtSound) hurtSound = GetComponent<AudioSource>();
@@ -62,6 +65,7 @@ public class EnemyAI : MonoBehaviour, IDamage
                 DropLoot();
             }
             CreateDeathBum();
+            if (onDeath != null) onDeath.Invoke();
             Destroy(gameObject);
         }
         else
@@ -102,6 +106,7 @@ public class EnemyAI : MonoBehaviour, IDamage
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (!(other.CompareTag("Player") || other.CompareTag("DamagableEnemy"))) return;
         if (other.GetComponent<IDamage>() != null && other.isTrigger)
         {
             other.GetComponent<IDamage>().Damaged(meleeDamage);
@@ -232,8 +237,10 @@ public class EnemyAI : MonoBehaviour, IDamage
         // Multiply the direction by our desired speed to get a velocity
         Vector3 velocity = dir * speed * speedFactor;
 
-        if (!idle && !takingKB && canMove) {
-            rb.MovePosition(transform.position += velocity * Time.deltaTime);
+        if (!idle && !takingKB && canMove)
+        {
+            //rb.MovePosition(transform.position += velocity * Time.deltaTime);
+            rb.velocity = velocity;
             Vector3 dirToPlayer = target.position - transform.position;
             if (dirToPlayer != Vector3.zero)
             {
@@ -241,7 +248,8 @@ public class EnemyAI : MonoBehaviour, IDamage
                 else if (dirToPlayer.x <= 0.1f) sRenderer.flipX = true;
             }
             an.SetBool("walking", true);
-        }else an.SetBool("walking", false);
+        }
+        else { an.SetBool("walking", false); rb.velocity = Vector3.zero; }
 
         // If you are writing a 2D game you should remove the CharacterController code above and instead move the transform directly by uncommenting the next line
         // transform.position += velocity * Time.deltaTime;
@@ -256,7 +264,7 @@ public class EnemyAI : MonoBehaviour, IDamage
         }
         else
         {
-            Debug.Log(p.errorLog);
+            if(gameObject.activeInHierarchy) Debug.Log(gameObject.name + ":   " + p.errorLog);
         }
     }
 

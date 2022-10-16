@@ -24,4 +24,15 @@ public class DroppedItem : MonoBehaviour, ILocalization
             localize = false;
         }   
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.GetComponent<PlayerItem>() == null) return;
+        if (!obtained)
+        {
+            other.GetComponent<PlayerItem>().GrabItem(item, itemAmount, itemName);
+            obtained = true;
+            Destroy(gameObject);
+        }
+    }
 }

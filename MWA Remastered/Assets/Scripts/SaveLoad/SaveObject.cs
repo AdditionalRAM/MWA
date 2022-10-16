@@ -9,6 +9,8 @@ public class SaveObject
     public string placeName;
     public bool[] dungeonsComplete, bossesKilled;
     public bool[] chestsOpened, doorsUnlocked;
+    public int[] questProgresses;
+    public int currentQuest;
     public bool oldwomanDialog1, oldwomanToldStory;
     public bool fuatDialog1, fuatKeyGiven;
     public bool knifegiverGaveKnife;
@@ -26,5 +28,7 @@ public class SaveObject
         doorsUnlocked = SaveGame.doorsUnlocked;
         dungeonsComplete = SaveGame.dungeonsComplete;
         bossesKilled = SaveGame.bossesKilled;
+        questProgresses = SaveGame.questProgresses;
+        currentQuest = SaveGame.currentQuest;
     }
 }
