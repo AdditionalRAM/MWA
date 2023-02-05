@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class DroppedItem : MonoBehaviour, ILocalization
 {
@@ -9,6 +10,7 @@ public class DroppedItem : MonoBehaviour, ILocalization
     public int itemAmount;
     public string itemName;
     public bool obtained = false;
+    public float tweenDur = .3f;
 
     public void OnLocalize()
     {
@@ -31,8 +33,15 @@ public class DroppedItem : MonoBehaviour, ILocalization
         if (!obtained)
         {
             other.GetComponent<PlayerItem>().GrabItem(item, itemAmount, itemName);
-            obtained = true;
-            Destroy(gameObject);
+            DestroyItem();
         }
+    }
+
+    public void DestroyItem()
+    {
+        obtained = true;
+        GetComponent<BoxCollider2D>().enabled = false;
+        transform.DOScale(Vector3.zero, tweenDur);
+        Destroy(gameObject, tweenDur);
     }
 }

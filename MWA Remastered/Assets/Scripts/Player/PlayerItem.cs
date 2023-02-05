@@ -28,6 +28,7 @@ public class PlayerItem : MonoBehaviour
     public int quickHealCooldown;
 
     public float quickHealTimer;
+    public ItemObject emptyEquipment;
 
     private void Awake()
     {
@@ -39,17 +40,20 @@ public class PlayerItem : MonoBehaviour
         GetInput();
         if (selectedItem != null)
         {
-            MoveCrosshair();
-            if (!selectedItem.useDuringAnim && !selectedItem.animating)
+            if (selectedItem.myItem != emptyEquipment)
             {
-                RotateItem();
+                MoveCrosshair();
+                if (!selectedItem.useDuringAnim && !selectedItem.animating)
+                {
+                    RotateItem();
+                }
+                else if (selectedItem.useDuringAnim)
+                {
+                    RotateItem();
+                }
+                selectedItem.owner = gameObject;
+                selectedItem.crosshair = crosshair.transform;
             }
-            else if (selectedItem.useDuringAnim)
-            {
-                RotateItem();
-            }
-            selectedItem.owner = gameObject;
-            selectedItem.crosshair = crosshair.transform;
         }
         if(!quickHealUsable) UpdateQuickHealTimer();
         if (consumeInventory.HasItem(healthPot, 1))
@@ -129,6 +133,15 @@ public class PlayerItem : MonoBehaviour
         {
             aimInput = Vector3.zero;
         }
+        if(selectedItem == null || selectedItem.myItem == emptyEquipment)
+        {
+            aimStick.gameObject.SetActive(false);
+            aimStickIndicator.SetActive(false);
+        }
+        else
+        {
+            aimStick.background.parent.gameObject.SetActive(true);
+        }
     }
 
     public void RotateItem()
@@ -165,6 +178,10 @@ public class PlayerItem : MonoBehaviour
             else if (selectedItem.useDuringAnim)
             {
                 selectedItem.Use();
+            }
+            if(GetComponent<TutorialMessages>() != null)
+            {
+                GetComponent<TutorialMessages>().PlayerAttacked();
             }
         }  
     }
@@ -313,6 +330,11 @@ public class PlayerItem : MonoBehaviour
     public void EquipItem(GameObject itemToEquip)
     {
         selectedItem = Instantiate(itemToEquip, itemParent).GetComponent<Item>();
+        var ss = FindObjectsOfType<MonoBehaviour>().OfType<IOnPlayerGetItem>();
+        foreach (IOnPlayerEquipItem s in ss)
+        {
+            s.OnPlayerEquipItem(selectedItem.myItem);
+        }
     }
 
     public void UnequipItem()

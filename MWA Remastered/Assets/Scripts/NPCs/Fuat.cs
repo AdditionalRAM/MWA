@@ -44,7 +44,6 @@ public class Fuat : NPCDialogue, IUseSaveGame
     {
         if (saidDialog1)
         {
-            QuestHolder.instance.questSHim.SpokeToFuat();
             canOption = false; optionChoice = false;
             if (heartsTaken && !keyGiven)
             {
@@ -78,7 +77,6 @@ public class Fuat : NPCDialogue, IUseSaveGame
     {
         canOption = false; optionChoice = false;
         saidDialog1 = true;
-        QuestHolder.instance.questSHim.SpokeToFuat();
         SetVarsToSaveGame();
     }
     public void OnDialogEnd()

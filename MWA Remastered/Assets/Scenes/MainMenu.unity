@@ -374,7 +374,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -983}
+  m_AnchoredPosition: {x: 0, y: -997}
   m_SizeDelta: {x: 1350, y: 172.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &182840344
@@ -410,9 +410,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Felix Sacher
-
-    (help with German translation)'
+  m_Text: "Yusuf Onat Konyal\u0131\n(game design ideas)"
 --- !u!222 &182840345
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -572,7 +570,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xC7eviri"
+  m_Text: "Di\u011Fer"
 --- !u!222 &208352235
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2243,7 +2241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -809}
+  m_AnchoredPosition: {x: 0, y: -812}
   m_SizeDelta: {x: 1350, y: 172.33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &437871801
@@ -4520,7 +4518,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Felix Sacher\n(Almanca'ya \xE7evirirken yard\u0131m)"
+  m_Text: "Yusuf Onat Konyal\u0131\n(Oyun tasar\u0131m\u0131 i\xE7in fikirler)"
 --- !u!222 &860877750
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4919,7 +4917,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Translation
+  m_Text: Other
 --- !u!222 &905189913
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5681,7 +5679,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Felix Sacher\n(Hilfe bei der deutschen \xDCbersetzung)"
+  m_Text: "Yusuf Onat Konyal\u0131\n(Game-Design Ideen)"
 --- !u!222 &1024240593
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6522,6 +6520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -7743,7 +7742,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\xDCbersetzung"
+  m_Text: Sonstiges
 --- !u!222 &1475050317
 CanvasRenderer:
   m_ObjectHideFlags: 0

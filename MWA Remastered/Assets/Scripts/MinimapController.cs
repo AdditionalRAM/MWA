@@ -11,6 +11,7 @@ public class MinimapController : MonoBehaviour
     public RectTransform[] mmPoints;
     public Vector2 minimapOffset;
     public float tweenDur;
+    public float disableTweenDur, enabledX, disabledX;
 
     public Mask mapMask;
     public bool mapExtended;
@@ -74,5 +75,18 @@ public class MinimapController : MonoBehaviour
     {
         mapExtended = false;
         mapMask.enabled = true;
+    }
+
+    public void MinimapSetHidden(bool setHidden)
+    {
+        if (setHidden)
+        {
+            GetComponent<RectTransform>().DOAnchorPosX(enabledX, disableTweenDur);
+        }
+        else
+        {
+            GetComponent<RectTransform>().DOAnchorPosX(disabledX, disableTweenDur);
+
+        }
     }
 }

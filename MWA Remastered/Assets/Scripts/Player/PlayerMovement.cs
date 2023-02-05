@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
     public bool takenKB;
 
     public int currentRoomID;
+    public RoomSwitcher currentRoom;
 
     IEnumerator armorRegenCo;
 

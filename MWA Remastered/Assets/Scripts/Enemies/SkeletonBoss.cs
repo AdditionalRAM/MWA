@@ -301,7 +301,6 @@ public class SkeletonBoss : MonoBehaviour, IDamage
         ui.bossBar.gameObject.SetActive(false);
         GameObject kartoffel = Instantiate(deathParticle, room.transform);
         kartoffel.transform.position = transform.position;
-        QuestHolder.instance.questSHim.FinishedCave();
         Destroy(gameObject);
     }
 

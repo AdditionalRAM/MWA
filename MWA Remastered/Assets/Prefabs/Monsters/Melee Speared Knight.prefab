@@ -361,6 +361,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mama: {fileID: 946880475780844717}
   indicateAnger: 1
+  playerInSight: 0
+  pWasInRange: 0
   angerIndicator: {fileID: 946880476168214017}
 --- !u!50 &1597963287265176271
 Rigidbody2D:
@@ -749,17 +751,22 @@ MonoBehaviour:
   explosionColor: {r: 0.5566038, g: 0, b: 0, a: 1}
   loot:
   - {fileID: 7269522145273399887, guid: 189a33da75e3fd74fb63c2e2a4e4ab7e, type: 3}
+  - {fileID: 7269522145273399887, guid: b50f4fe3844173a4c86b375a230f8e31, type: 3}
   deathBum: {fileID: 5687520885970218330, guid: d9915e53deb74f94fb601f7eab609519, type: 3}
-  lootChances: 64000000
-  lootAmounts: 05000000
+  lootChances: 6400000032000000
+  lootAmounts: 0500000001000000
   lootRangeTop: {x: 0.5, y: 0.5, z: 0}
   lootRangeBottom: {x: -0.5, y: -0.5, z: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []
   selectedItem: {fileID: 8844226877284887770}
   attackRange: 2.2
   attackCooldown: 0.3
   attackDelay: 0.5
   crosshair: {fileID: 946880476690398834}
   attacking: 0
+  myLight: {fileID: 0}
 --- !u!1001 &946880476736667671
 PrefabInstance:
   m_ObjectHideFlags: 0

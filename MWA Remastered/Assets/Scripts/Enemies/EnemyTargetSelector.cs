@@ -35,9 +35,9 @@ public class EnemyTargetSelector : MonoBehaviour
         {
             Vector3 dir = (players[0].position - mama.transform.position).normalized;
             float distance = Vector3.Distance(players[0].position, mama.transform.position);
-            LayerMask lyMask = UIReferences.instance.obstacle;
+            LayerMask lyMask = UIReferences.instance.obstacleNoArrow;
             RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, distance, lyMask);
-            if (hit.collider == null){ pWasInRange = true; playerInSight = true; }
+            if (hit.collider == null || hit.collider.CompareTag("ArrowGoThru")){ pWasInRange = true; playerInSight = true; }
         }
         if (playerInSight)
         {

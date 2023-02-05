@@ -23,6 +23,7 @@ public class RoomSwitcher : MonoBehaviour, ILocalization
     public bool lighting;
     public int minimapRoomID = -1;
     public bool playerInside = false;
+    public float pushAmount = .5f;
 
     private void Awake()
     {
@@ -33,22 +34,29 @@ public class RoomSwitcher : MonoBehaviour, ILocalization
     {
         if (other.CompareTag("Player") && !other.isTrigger)
         {
+            PlayerMovement player = other.GetComponent<PlayerMovement>();
+            if (player.currentRoom != null)
+            {
+                Vector3 dir = (player.GetComponent<Rigidbody2D>().velocity).normalized;
+                player.GetComponent<Rigidbody2D>().MovePosition(player.transform.position + (DirectionTo4Way(dir) * pushAmount));
+            }
             playerInside = true;
             if (onRoomLoad != null) onRoomLoad.Invoke();
             if (lighting)
             {
-                other.GetComponent<PlayerMovement>().SetLighting(lightIntensity, lightTweenDuration);
+                player.SetLighting(lightIntensity, lightTweenDuration);
             }
             roomCam.SetActive(true);
             if (cutsceneOnEnter) Cutscene();
-            other.GetComponent<PlayerMovement>().currentRoomID = minimapRoomID;
-            if (other.GetComponent<PlayerMovement>().currentPlaceName != placeName)
+            player.currentRoomID = minimapRoomID;
+            player.currentRoom = this;
+            if (player.currentPlaceName != placeName)
             {
-                StartCoroutine(PlaceName(other.GetComponent<PlayerMovement>()));
+                StartCoroutine(PlaceName(player));
             }
-            if (other.GetComponent<PlayerMovement>().currentBGMusic != myMusic && myMusic != null)
+            if (player.currentBGMusic != myMusic && myMusic != null)
             {
-                other.GetComponent<PlayerMovement>().currentBGMusic = myMusic;
+                player.currentBGMusic = myMusic;
                 UpdateMusic();
             }
         }
@@ -95,5 +103,26 @@ public class RoomSwitcher : MonoBehaviour, ILocalization
     {
         if (!localize) return;
         placeName = LocalManager.Localize(placeName);
+    }
+
+    public Vector3 DirectionTo4Way(Vector3 dir)
+    {
+        float absoluteX = Mathf.Abs(dir.x);
+        float absoluteY = Mathf.Abs(dir.y);
+        float newX = 0;
+        float newY = 0;
+        if (absoluteX > absoluteY)
+        {
+            //X
+            if (dir.x > 0) newX = 1;
+            else if (dir.x < 0) newX = -1;
+        }
+        else if (absoluteY > absoluteX)
+        {
+            if (dir.y > 0) newY = 1;
+            else if (dir.y < 0) newY = -1;
+        }
+        else return dir;
+        return new Vector3(newX, newY);
     }
 }

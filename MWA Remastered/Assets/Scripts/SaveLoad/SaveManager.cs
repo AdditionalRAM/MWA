@@ -126,6 +126,7 @@ public class SaveManager : MonoBehaviour
         {
             File.Delete(nowPath);
         }
+        PlayerPrefs.DeleteKey("tprogress");
         Debug.Log("Erased");
     }
 

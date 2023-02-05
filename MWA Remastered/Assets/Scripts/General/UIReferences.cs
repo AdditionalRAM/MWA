@@ -15,6 +15,8 @@ public class UIReferences : MonoBehaviour
 
     public GameObject quickHealButton, quickHealImage;
     public Text quickHealItemCount, quickHealCountdown;
+    public GameObject tutorialDialog;
+    public TMP_Text tutorialDialogText;
 
     //Dialogue
     public GameObject dialogBox, dialogOptions;
@@ -40,9 +42,7 @@ public class UIReferences : MonoBehaviour
 
     public MinimapController minimapController;
 
-    public LayerMask obstacle;
-
-    public GameObject newQuestScreen;
+    public LayerMask obstacle, obstacleNoArrow;
 
     public bool stopLighting;
 

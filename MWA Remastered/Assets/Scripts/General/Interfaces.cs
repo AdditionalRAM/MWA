@@ -43,3 +43,8 @@ public interface IOnPlayerGetItem
     void OnPlayerGetItem(ItemObject item, int itemCount);
 }
 
+public interface IOnPlayerEquipItem
+{
+    void OnPlayerEquipItem(ItemObject item);
+}
+

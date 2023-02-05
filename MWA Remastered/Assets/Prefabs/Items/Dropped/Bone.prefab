@@ -103,6 +103,7 @@ MonoBehaviour:
   itemAmount: 1
   itemName: id_item_bone
   obtained: 0
+  tweenDur: 0.1
 --- !u!61 &5899883750495619806
 BoxCollider2D:
   m_ObjectHideFlags: 0

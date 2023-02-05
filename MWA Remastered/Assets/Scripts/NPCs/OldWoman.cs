@@ -52,10 +52,6 @@ public class OldWoman : NPCDialogue, IUseSaveGame
         }
         if (toldStory && !endedStory) currentlySayingDialogs = afterStoryDialog;
         else if (endedStory) currentlySayingDialogs = endedStoryDialog;
-        if (endedStory && !QuestHolder.instance.questSTOW.complete)
-            QuestHolder.instance.questSTOW.OldWomanCompleteQuest();
-        if (saidDialog1 && QuestHolder.instance.questSTOW.progress < 2)
-            QuestHolder.instance.questSTOW.OldWomanAskForDaisy();
     }
 
     void CheckDaisy()
@@ -71,10 +67,6 @@ public class OldWoman : NPCDialogue, IUseSaveGame
 
     public void SetVarsToSaveGame()
     {
-        if (endedStory && QuestHolder.instance.questSTOW.progress < 3)
-            QuestHolder.instance.questSTOW.OldWomanCompleteQuest();
-        if(saidDialog1 && QuestHolder.instance.questSTOW.progress < 2)
-            QuestHolder.instance.questSTOW.OldWomanAskForDaisy();
         SaveGame.oldwomanDialog1 = saidDialog1;
         SaveGame.oldwomanToldStory = endedStory;
     }
@@ -98,7 +90,6 @@ public class OldWoman : NPCDialogue, IUseSaveGame
         canOption = false; optionChoice = false;
         saidDialog1 = true;
         SetVarsToSaveGame();
-        QuestHolder.instance.questSTOW.OldWomanAskForDaisy();
     }
 
     public void OnDialogEnd()

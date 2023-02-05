@@ -69,7 +69,12 @@ public class DebugManager : MonoBehaviour
                 foreach (BoxCollider2D collider in FindObjectOfType<PlayerMovement>().GetComponents<BoxCollider2D>())
                 {
                     if (!collider.isTrigger) collider.enabled = !collider.enabled;
+                    outOut = "Toggled player collider";
                 }
+                break;
+            case "resetplayerprefs":
+                PlayerPrefs.DeleteAll();
+                outOut = "Reset PlayerPrefs";
                 break;
             default:
                 outOut = "Invalid command " + debugCommands[0];
