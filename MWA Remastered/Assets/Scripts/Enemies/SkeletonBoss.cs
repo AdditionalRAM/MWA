@@ -250,7 +250,8 @@ public class SkeletonBoss : MonoBehaviour, IDamage
 
         if (walk && !takingKB)
         {
-            rb.MovePosition(transform.position += velocity * Time.deltaTime);
+            rb.velocity = velocity;
+            //rb.MovePosition(transform.position += velocity * Time.deltaTime);
             Vector3 dirToPlayer = target.position - transform.position;
             if (dirToPlayer != Vector3.zero)
             {
@@ -258,6 +259,7 @@ public class SkeletonBoss : MonoBehaviour, IDamage
                 else if (dirToPlayer.x <= 0.1f) sRenderer.flipX = true;
             }
         }
+        else rb.velocity = Vector3.zero;
         an.SetBool("Walk", walk);
 
         // If you are writing a 2D game you should remove the CharacterController code above and instead move the transform directly by uncommenting the next line

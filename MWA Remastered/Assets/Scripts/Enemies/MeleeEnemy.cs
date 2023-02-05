@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class MeleeEnemy : EnemyAI
 {
@@ -9,6 +10,8 @@ public class MeleeEnemy : EnemyAI
     public float attackCooldown, attackDelay;
     public Transform crosshair;
     public bool attacking;
+
+    public GameObject myLight;
 
     private void Update()
     {
@@ -33,6 +36,12 @@ public class MeleeEnemy : EnemyAI
             {
                 if(!attacking)canMove = true;
             }
+        }
+
+        if(transform.GetComponentInChildren<Light2D>() != null)
+        {
+            Light2D sussy = transform.GetComponentInChildren<Light2D>();
+            sussy.gameObject.SetActive(!UIReferences.instance.stopLighting);
         }
     }
 

@@ -104,7 +104,8 @@ public class OldWoman : NPCDialogue, IUseSaveGame
             transform.position = chair1Pos;
             player.transform.position = chair2Pos;
         }
-        else if (currentlySayingDialogs == afterStoryDialog) { endedStory = true; SetVarsToSaveGame(); }
+        else if (currentlySayingDialogs == afterStoryDialog) { endedStory = true; SetVarsToSaveGame();
+        }
     }
 
     void SetFuats()

@@ -8,6 +8,7 @@ public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiv
     public ItemObject[] items;
     public EquipmentObject emptyEquipment;
     public ArmorObject emptyArmor;
+    public int emptyEquipmentID, emptyArmorID;
     public Dictionary<ItemObject, int> GetId = new Dictionary<ItemObject, int>();
     public Dictionary<int, ItemObject> GetItem = new Dictionary<int, ItemObject>();
     public bool inited = false;
@@ -15,7 +16,7 @@ public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiv
 
     public void DictionaryInit()
     {
-        if (inited) return;
+        //if (inited) { Debug.Log("already inited"); return; }
         GetId = new Dictionary<ItemObject, int>();
         GetItem = new Dictionary<int, ItemObject>();
         for (int i = 0; i < items.Length; i++)

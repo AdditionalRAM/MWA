@@ -30,6 +30,7 @@ Your wife
 Gray boxes
 Hello, young one.
 The weather is pretty nice today.
+
 Wanted to talk about something?
 My wife?
 She has a story she loves telling everyone.
@@ -74,7 +75,7 @@ And puzzles?
 And another skeleton that is giant and throws bones?
 Wow. How did you survive that? You must be really brave.
 Hi, honey.
-Did you want to talk about something?
+I have never seen you before.
 Oh, I see, you would like to hear about the story.
 Hey, I would actually love some daisy tea right now.
 Why don't you collect some daisies for me near the lake...
@@ -248,715 +249,98 @@ End of demo - Thanks so much for playing!
 Follow the bushes to reach the Debug Room - your reward for completing the demo!
 If you have any thoughts, feedback, or bugs, please share them on the itch.io page!
 Thanks a lot.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This area is work in progress and not accessible in this version of the demo.
+Armor
+Chainmail Armor
+Steel Armor
+Drippy Sunglasses
+Empty
+Arrow
+Axe
+Bow
+Spear
+MCoin
+Robo Arm
+Robo Leg
+Robo Head
+Dark Forest
+Dark Village
+Dark Castle
+You can't go back anymore.
+The guard looks angry. Better not be seen.
+Oh, another one from Kologrent.
+Why do they even think they can save him?
+Do they think he's going to do them any good?
+This is why we're guarding this place with our lives.
+You'll have to kill us before you can get through!
+o h ,  t h a t  w o n ' t  b e  t h e  c a s e.
+Hello. Hope my men didn't hurt you.
+They can be way too agressive sometimes.
+Come on, let's get a cup of tea.
+Don't worry, I won't hurt you.
+Come on, what are you waiting for?
+Fancy a cup o' tea, mate?
+Please take a seat at the other side of the table.
+No need to be shy!
+Let's enjoy the tea.
+Mhmm. Delicious. Good old hot tea.
+I wonder what brings you here.
+It's rare to see young people like you in here.
+Got anything to talk about?
+Giant Knight
+Who are you?
+What are those cage like things?
+Me? Haha. I'm the protector of this place.
+There's a certain... thing that I am protecting.
+I have to guard it with my life...
+....................
+........
+......... i know why you're here.
+you want to rescue him, don't you?
+i do not understand...
+why???...
+you must pay...
+with your life.
+NullReferenceException : Object reference not set to an instance of an object
+BigWhiteBoss.NPCDialogue.DialogInteract()
+(at Assets/Scripts/NPCs/NPCDialogue.cs:76)
+You should probably open the chest.
+The chest is now empty.
+smol knight
+Gotcha lmao
+No reason to go back.
+The bushes are blocking the way. Maybe an axe could break them?
+Turn lighting on or off. Keeping it on is recommended unless you get performance issues.
+Shield HP : 
+Objectives
+New Objective
+Objective Complete
+Objective Updated
+Speak to Old Woman
+An old man told you to speak with his wife. Appereantly she has a story to tell.
+The old lady asked you to bring her three daisies so she can make tea. Take them and speak with her.
+Gather Information
+The old lady told you her son made an attempt to rescue him. He might have some useful information.
+Fuat needs five monster hearts for his shop. You'll need a weapon to get those.
+With the knife, you can collect the monster hearts. There are a lot of monsters in the Maze Forest.
+Fuat gave you the key to his secret basement. There may be some useful stuff.
+The key to exit Kologrent must be in the cave.
+With the key, you can finally leave Kologrent.
+5 + 9 = ?
+The answer is 14.
+If you couldn't calculate that, you probably shouldn't go further.
+Hold on. My mother would probably like to meet you.
+You should probably go see her. She lives in the house to the right of the fountain.
+Did you want to ask about something?
+Stay out of my secret place! -Fuat
+Kologrent Cave ↑
+Big Deadly Bridge Of Doom ←
+Use the joystick on the left to move.
+Equip the knife from your Inventory -> Equipment.
+Use the joystick on the right to aim, let go to attack.
+We got busted.
+Terminate operation.
+Ripped Page
 
 
 

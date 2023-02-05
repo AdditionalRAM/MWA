@@ -55,6 +55,11 @@ public class SavePoint : MonoBehaviour
         currentPlayer.freeze = true;
         playerFrozen = true;
         saveUI.EnableSaveMenu();
+        if (currentPlayer.altScript.Healable())
+        {
+            currentPlayer.altScript.Heal(10);
+            currentPlayer.altScript.healSound.Play();
+        }
         yield return new WaitForSeconds(.25f);
         playerFrozen = false;
     }

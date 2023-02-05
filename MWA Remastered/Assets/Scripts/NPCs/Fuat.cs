@@ -71,7 +71,6 @@ public class Fuat : NPCDialogue, IUseSaveGame
     {
         CheckHearts();
         CheckVars();
-        
     }
 
     public void OnOption2End()
@@ -84,7 +83,7 @@ public class Fuat : NPCDialogue, IUseSaveGame
     {
         if (currentlySayingDialogs == yesHearts)
         {
-            Instantiate(keyPrefab, keyPosition, Quaternion.identity);
+            Instantiate(keyPrefab, player.transform.position, Quaternion.identity);
             keyGiven = true;
             SetVarsToSaveGame();
         }

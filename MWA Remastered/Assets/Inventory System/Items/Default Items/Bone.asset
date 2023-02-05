@@ -17,6 +17,6 @@ MonoBehaviour:
   equipItem: {fileID: 0}
   armorItem: {fileID: 0}
   keyItem: {fileID: 0}
-  prefab: {fileID: 282915643220335936, guid: 591f954283c938648bcc4f2e7660c230, type: 3}
+  prefab: {fileID: 282915643220335936, guid: 9c2b9af5a071dea4ca667e106ca5d7e9, type: 3}
   type: 0
   description: b o n e

@@ -74,7 +74,7 @@ Ve bulmacalar?
 Ve bir tane de dev gibi ve kemik fırlatan iskelet?
 Vay be. Oradan nasıl sağ çıkabildin?
 Merhaba canım.
-Bir şey hakkında konuşmak mı istedin?
+Seni ilk kez görüyorum.
 Aha, hikayeyi duymak istiyorsun.
 Baksana, şu anda bir bardak papatya çayı çok iyi giderdi.
 Bana gölün yakınından birkaç tane papatya toplayabilir misin?
@@ -248,715 +248,98 @@ Denemenin sonu - oynadığın için teşekkürler!
 Debug Odasına gitmek için çalıları takip et!
 Oyun hakkında söyleyecek bir şeyin, geri bildirimin veya bulduğun bir hata varsa itch.io'da söylemen çok iyi olur!
 Çok teşekkürler.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Bu alan henüz tamamlanmamıştır ve demonun bu sürümünde erişilebilir değildir.
+Zırh
+Zincir Zırh
+Çelik Zırh
+Güneş Gözlüğü
+Boş
+Ok
+Balta
+Yay
+Mızrak
+MCoin
+Robo Kol
+Robo Bacak
+Robo Gafa
+Karanlık Orman
+Karanlık Köy
+Karanlık Kale
+Artık geri dönüş yok.
+Muhafız sinirli gözüküyor. Görünmesen iyi olabilir.
+Aa, Kologrent'ten biri daha.
+Onu kurtarabileceklerini niye düşünüyorlar ki?
+Onlara iyi bir şey yapacağını mı zannediyorlar?
+İşte tam bu yüzden burayı canımızla koruyoruz.
+Buradan geçmek için bizi öldürmen gerekecek!
+a h , b e n  ö y l e  d ü ş ü n m ü y o r u m .
+Merhaba. Umarım adamlarım seni incitmedi.
+Bazen çok sert olabiliyorlar.
+Hadi gel, oturup çay içelim.
+Endişelenme, sana bir şey yapmam.
+Hadisene, ne bekliyorsun?
+İngilizlerin söylediği gibi : 
+"Fancy a cup o' tea, mate?"
+Hadi geç masanın öbür tarafına otur. Utanmaya gerek yok!
+Sonunda çay içebiliriz.
+Mmmm. Güzelim sıcacık çay.
+Seni buralara ne getirdi acaba?
+Burada senin gibi gençler çok sık görünmüyor.
+Söyleyecek bir şeyin var mı?
+Dev Şövalye
+Sen kimsin?
+Bu kafes gibi şeyler ne?
+Ben mi? Haha. Ben bu kalenin koruyucusuyum.
+Koruduğum bir.... şey var.
+Onu canım pahasına korumam gerekiyor.
+....................
+........
+......... neden burda olduğunu biliyorum.
+onu kurtarmak istiyorsun değil mi?
+anlamıyorum...
+neden???...
+bedelini ödemen lazım...
+hayatın.
+NullReferenceException : Object reference not set to an instance of an object
+BigWhiteBoss.NPCDialogue.DialogInteract()
+(at Assets/Scripts/NPCs/NPCDialogue.cs:76)
+Sandığı açsan iyi olabilir.
+Sandık artık boş.
+cücük şövalye
+trollendin haha
+Geri dönmek için bir sebep yok.
+Bu çalılar yolu kapatıyor. Belki de bir balta onları kırabilir?
+Işıklandırmayı aç veya kapa. Performans sıkıntısı olmadığı sürece açık bırakılması tavsiye edilir.
+Kalkan : 
+Görevler
+Yeni Görev
+Görev Tamamlandı
+Görev Güncellendi
+Yaşlı kadınla konuş
+Yaşlı bir adam onun eşiyle konuşmanı söyledi. Anlatacak bir hikayesi varmış.
+Yaşlı kadın senden çay yapabilmesi için ona üç papatya götürmeni istedi. Papatyaları al ve gidip onunla konuş.
+Bilgi topla
+Yaşlı kadın oğlunun onu daha önce kurtarmaya çalıştığını söyledi. Oğlu önemli bir şeyler biliyor olabilir.
+Fuat'ın marketi için beş canavar kalbine ihtiyacı var. Bunları toplamak için bir silaha ihtiyacın olacak.
+Yeni bıçağınla canavar kalplerini toplayabilirsin. Labirent Ormanı'nda çok canavar var.
+Fuat sana bodrumunun anahtarını verdi. Orda kullanışlı bir şey olabilir.
+Kologrent'ten ayrılmak için gereken anahtar mağarada olmalı.
+Anahtarla sonunda Kologrent'ten ayrılabilirsin.
+5 + 9 = ?
+Cevap 14.
+Bunu bilemediysen daha ileri gitme.
+Bir dakika. Annem seni görmek isteyebilir.
+Onun yanına gitmelisin. Çeşmenin sağındaki evde yaşıyor.
+Bir şey mi soracaktın?
+Gizli yerimden uzak dur! -Fuat
+Kologrent Mağarası ↑
+Büyük Ölümcül Kıyamet Köprüsü ←
+Soldaki joystick ile hareket et.
+Envanter -> Ekipman ekranından bıçağı kuşan.
+Sağdaki joystick ile nişan al, saldırmak için bırak.
+Yakalandık.
+Operasyon iptal.
+Yırtık Sayfa
 
 
 

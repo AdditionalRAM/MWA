@@ -54,6 +54,7 @@ public class InventoryTabManager : MonoBehaviour
     {
         foreach (GameObject invD in itemMenus)
         {
+            if(invD.GetComponent<InventoryDisplay>() != null)
             invD.GetComponent<InventoryDisplay>().inventory.Save();
         }
     }
@@ -63,6 +64,7 @@ public class InventoryTabManager : MonoBehaviour
         foreach (GameObject invD in itemMenus)
         {
             InventoryDisplay inventar = invD.GetComponent<InventoryDisplay>();
+            if(inventar != null)
             inventar.inventory.Load(inventar);
         }
     }

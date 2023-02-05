@@ -63,6 +63,7 @@ public class SaveManager : MonoBehaviour
             }
         }
         else SaveGame.bossesKilled = data.bossesKilled;
+        SaveGame.questProgresses = data.questProgresses;
     }
 
     public void Save()
@@ -125,6 +126,7 @@ public class SaveManager : MonoBehaviour
         {
             File.Delete(nowPath);
         }
+        PlayerPrefs.DeleteKey("tprogress");
         Debug.Log("Erased");
     }
 

@@ -363,6 +363,9 @@ MonoBehaviour:
   canAttack: 0
   flipSprite: 0
   itemType: 0
+  onFinishAttack:
+    m_PersistentCalls:
+      m_Calls: []
   delayDuration: 0.5
   swingDuration: 0.5
   cooldownDuration: 0.4
@@ -441,7 +444,7 @@ TrailRenderer:
   m_SortingLayerID: -933690803
   m_SortingLayer: 2
   m_SortingOrder: -1
-  m_Time: 0.1
+  m_Time: 0.25
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1

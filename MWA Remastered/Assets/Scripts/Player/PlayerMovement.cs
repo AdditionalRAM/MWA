@@ -51,6 +51,9 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
     public bool iFrames;
     public bool takenKB;
 
+    public int currentRoomID;
+    public RoomSwitcher currentRoom;
+
     IEnumerator armorRegenCo;
 
     private void Awake()
@@ -92,6 +95,7 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
         {
             QualitySettings.vSyncCount = 1;
         }
+        ui.minimapController.currentRoom = currentRoomID;
     }
 
     private void FixedUpdate()
@@ -235,7 +239,9 @@ public class PlayerMovement : MonoBehaviour, IDamage, IUseSaveGame, IUseOnSave
 
     public void RefreshLighting()
     {
+        if(currentRoomLight > 0)
         SetLighting(currentRoomLight, 0.5f);
+        else SetLighting(1, 0.5f);
     }
 
     public void SetLighting(float lightIntensity, float lightTweenDuration)

@@ -95,6 +95,7 @@ public class InventoryDisplay : MonoBehaviour
         if (player == null) Debug.Log("Need backup coroutunio");
         inventory.iEquippedItem(itemToEquip);
         player.EquipItem(itemToEquip.equipPrefab);
+        useAudio.Play();
     }
 
     public void Unequip()
@@ -111,6 +112,7 @@ public class InventoryDisplay : MonoBehaviour
     {
         player.EquipArmor(armorToEquip);
         inventory.iEquippedItem(armorToEquip);
+        useAudio.Play();
     }
 
     public void UnequipArmor()

@@ -25,6 +25,8 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
             database = (ItemDatabaseObject)AssetDatabase.LoadAssetAtPath("Assets/Resources/Database.asset", typeof(ItemDatabaseObject));
 #else
             database = Resources.Load<ItemDatabaseObject>("Database");
+            Debug.Log("We are not in da unity editor so loaded database");
+            database.DictionaryInit();
 #endif
     }
 
@@ -70,6 +72,19 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
         return false;
     }
 
+    public int CountItem(ItemObject __item)
+    {
+        if (!HasItem(__item, 1)) return 0;
+        foreach (InventorySlot slot in container.ToArray())
+        {
+            if (slot.item == __item)
+            {
+                currentSlot = slot;
+            }
+        }
+        return currentSlot.amount;
+    }
+
     public void OnBeforeSerialize()
     {
     }
@@ -91,7 +106,14 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
             }
             else
             {
-                container[i].item = database.GetItem[container[i].ID];
+                if(!database.GetItem.TryGetValue(container[i].ID, out container[i].item))
+                {
+                    Debug.LogError(container[i].ID + " was not found in the GetItem dictionary!");
+                }
+                else
+                {
+                    container[i].item = database.GetItem[container[i].ID];
+                }
             }
         }
     }
@@ -132,7 +154,8 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
                 invenDisplay.Rerender(); 
                 if(inventoryType == ItemType.Equipment)
                 {
-                    if(equippedID != database.GetId[database.emptyEquipment] && database.GetItem[equippedID].type == ItemType.Equipment)
+                    if(equippedID != database.emptyEquipmentID
+                        && database.GetItem[equippedID].type == ItemType.Equipment)
                     {
                         invenDisplay.Equip(database.GetItem[equippedID].equipItem);
                     }
@@ -180,7 +203,14 @@ public class InventoryObject : ScriptableObject, ISerializationCallbackReceiver
 
     public void iEquippedItem(ItemObject item)
     {
-        equippedID = database.GetId[item];
+        if(database.GetId.TryGetValue(item, out equippedID))
+        {
+            equippedID = database.GetId[item];
+        }
+        else
+        {
+            Debug.LogError(item + " was not found in the dictionary GetId!");
+        }
     }
 }
 

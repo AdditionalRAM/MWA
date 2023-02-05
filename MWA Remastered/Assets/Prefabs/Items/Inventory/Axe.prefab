@@ -28,6 +28,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2532350393564755797}
   m_RootOrder: 0
@@ -109,6 +110,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8031125675788719897}
   - {fileID: 5347315406389891482}
@@ -179,7 +181,7 @@ MonoBehaviour:
   usable: 1
   canUse: 0
   infotabPrefab: {fileID: 4313461155571057500, guid: 6d65f720faf2ab048b94753a62cfffb8, type: 3}
-  itemName: id_item_sword
+  itemName: id_axe
   useMSG: id_equip
   itemStat1: id_damage
   itemStat2: id_range
@@ -273,6 +275,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: -0.38268343, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2532350393564755797}
   m_RootOrder: 1

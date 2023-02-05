@@ -11,6 +11,8 @@ public class BigWhiteBoss : EnemyAI
 
     UIReferences ui;
 
+    public bool localizeOnAwake;
+
     public int angerHealth;
     public Color angerColor;
     public string bossTitle;
@@ -25,8 +27,15 @@ public class BigWhiteBoss : EnemyAI
     public bool canCoroutine, receivedEndMsg, angry, moveCrosshair = true;
     public int attackCount;
 
+    public AudioClip ambience, bossMusic;
+    public RoomSwitcher myRoom;
+    public GameObject enableOnDeath;
+
+    public int bossID, dungeonID;
+
     private void OnEnable()
     {
+        bossTitle = LocalManager.Localize(bossTitle);
         ui = FindObjectOfType<UIReferences>();
         CreateDeathBum();
         state = BigWhiteBossState.Wait;
@@ -41,6 +50,9 @@ public class BigWhiteBoss : EnemyAI
         ui.bossBar.gameObject.SetActive(true);
         ui.bossBar.SetMaxValue(health, true);
         table.CommitDie();
+        myRoom.myMusic = bossMusic;
+        myRoom.UpdateMusic();
+        if (SaveGame.bossesKilled[bossID]) Debug.Log("Hey I shouldnt be alive rn");
     }
 
     IEnumerator WaitCo()
@@ -51,7 +63,6 @@ public class BigWhiteBoss : EnemyAI
 
     private void Update()
     {
-        Debug.Log(Vector3.Distance(transform.position, crosshair.position));
         ui.bossBar.SetValue(health);
         if (!angry)
         {
@@ -208,4 +219,13 @@ public class BigWhiteBoss : EnemyAI
         attackCount++;
     }
 
+    public void OnDeath()
+    {
+        myRoom.myMusic = ambience;
+        myRoom.UpdateMusic();
+        SaveGame.bossesKilled[bossID] = true;
+        SaveGame.dungeonsComplete[dungeonID] = true;
+        FindObjectOfType<CheckDungeonComplete>().OnAfterGameLoad();
+        enableOnDeath.SetActive(true);
+    }
 }
